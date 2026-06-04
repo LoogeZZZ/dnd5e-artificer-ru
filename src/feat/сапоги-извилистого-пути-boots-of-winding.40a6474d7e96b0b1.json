@@ -1,0 +1,65 @@
+{
+  "_id": "40a6474d7e96b0b1",
+  "_key": "!items!40a6474d7e96b0b1",
+  "name": "Сапоги извилистого пути (Boots of Winding Path)",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-triangle-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Предмет:</strong> пара обуви (требуется настройка).</p>\n<p>Пока вы носите эту обувь, вы можете телепортироваться на расстояние до 15 футов бонусным действием в незанятое пространство, которое вы видите. Вы должны были побывать на этом месте ранее в этот ход. Например, вы можете телепортироваться обратно туда, откуда начали движение.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Инфузия изобретателя",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "e8b8962cd123947e",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

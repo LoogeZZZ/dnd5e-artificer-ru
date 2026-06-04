@@ -1,0 +1,532 @@
+{
+  "_id": "d2793e5c6d86dc95",
+  "_key": "!items!d2793e5c6d86dc95",
+  "name": "Изобретатель",
+  "type": "class",
+  "img": "icons/tools/smithing/anvil.webp",
+  "system": {
+    "description": {
+      "value": "<p><em>Источник: Tasha's Cauldron of Everything.</em></p>\n<p>Изобретатели — мастера изобретения. Они используют изобретательность и магию, чтобы раскрыть необычные возможности предметов. В глазах изобретателя весь мир — это механизм. Изобретатели овладевают магией прежде всего через инструменты, вливая магическую силу в обычные вещи и создавая удивительные изобретения и инфузии.</p>\n<h3>Особенности класса</h3>\n<ul>\n<li><strong>Кость хитов:</strong> 1к8 за уровень изобретателя.</li>\n<li><strong>Основная характеристика:</strong> Интеллект (заклинания, многие умения).</li>\n<li><strong>Спасброски:</strong> Телосложение, Интеллект.</li>\n<li><strong>Доспехи:</strong> лёгкие и средние доспехи, щиты.</li>\n<li><strong>Оружие:</strong> простое оружие.</li>\n<li><strong>Инструменты:</strong> воровские инструменты, инструменты ремесленника (тинкера) и один набор инструментов ремесленника по вашему выбору.</li>\n<li><strong>Навыки:</strong> выберите два из: Магия, История, Анализ, Медицина, Природа, Внимательность, Ловкость рук.</li>\n</ul>\n<p>Изобретатель — заклинатель-«полукастер»: использует Интеллект, готовит заклинания, а в качестве фокусировки применяет инструменты ремесленника или воровские инструменты. На 2-м уровне открывается ключевое умение — <strong>Инфузирование предмета</strong>, на 3-м выбирается специальность (Алхимик, Артиллерист, Боевой кузнец или Бронник).</p>",
+      "chat": ""
+    },
+    "identifier": "artificer",
+    "levels": 1,
+    "hitDice": "d8",
+    "hitDiceUsed": 0,
+    "hd": {
+      "denomination": "d8",
+      "spent": 0
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "primaryAbility": {
+      "value": [
+        "int"
+      ],
+      "all": true
+    },
+    "spellcasting": {
+      "progression": "artificer",
+      "ability": "int",
+      "preparation": {
+        "formula": ""
+      }
+    },
+    "wealth": "5d4 * 10",
+    "advancement": [
+      {
+        "_id": "bb18ec437145bc79",
+        "type": "HitPoints",
+        "configuration": {},
+        "value": {},
+        "title": "Хиты",
+        "icon": "",
+        "classRestriction": ""
+      },
+      {
+        "_id": "5975180d18920961",
+        "type": "Trait",
+        "configuration": {
+          "hint": "",
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "saves:con",
+            "saves:int"
+          ],
+          "choices": []
+        },
+        "value": {},
+        "level": 1,
+        "title": "Спасброски",
+        "icon": ""
+      },
+      {
+        "_id": "19f076031dbe7cc9",
+        "type": "Trait",
+        "configuration": {
+          "hint": "",
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [
+            "armor:lgt",
+            "armor:med",
+            "armor:shield",
+            "weapon:sim",
+            "tool:thief",
+            "tool:tinker"
+          ],
+          "choices": []
+        },
+        "value": {},
+        "level": 1,
+        "title": "Доспехи и оружие",
+        "icon": ""
+      },
+      {
+        "_id": "eb4dadfbe7843cb1",
+        "type": "Trait",
+        "configuration": {
+          "hint": "",
+          "mode": "default",
+          "allowReplacements": false,
+          "grants": [],
+          "choices": [
+            {
+              "count": 2,
+              "pool": [
+                "skills:arc",
+                "skills:his",
+                "skills:inv",
+                "skills:med",
+                "skills:nat",
+                "skills:prc",
+                "skills:slt"
+              ]
+            }
+          ]
+        },
+        "value": {},
+        "level": 1,
+        "title": "Навыки",
+        "icon": ""
+      },
+      {
+        "_id": "d0b26525cfbee4d4",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "infusions-known",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "value": 4
+            },
+            "6": {
+              "value": 6
+            },
+            "10": {
+              "value": 8
+            },
+            "14": {
+              "value": 10
+            },
+            "18": {
+              "value": 12
+            }
+          }
+        },
+        "value": {},
+        "title": "Известные инфузии",
+        "icon": ""
+      },
+      {
+        "_id": "737a57853802220e",
+        "type": "ScaleValue",
+        "configuration": {
+          "identifier": "infused-items",
+          "type": "number",
+          "distance": {
+            "units": ""
+          },
+          "scale": {
+            "2": {
+              "value": 2
+            },
+            "6": {
+              "value": 3
+            },
+            "10": {
+              "value": 4
+            },
+            "14": {
+              "value": 5
+            },
+            "18": {
+              "value": 6
+            }
+          }
+        },
+        "value": {},
+        "title": "Влитые предметы",
+        "icon": ""
+      },
+      {
+        "_id": "ea0e878a7ba6ec65",
+        "type": "ItemChoice",
+        "configuration": {
+          "hint": "Выберите инфузии из списка изобретателя. На уровне можно заменить одну известную инфузию.",
+          "choices": {
+            "2": {
+              "count": 4,
+              "replacement": false
+            },
+            "6": {
+              "count": 2,
+              "replacement": false
+            },
+            "10": {
+              "count": 2,
+              "replacement": false
+            },
+            "14": {
+              "count": 2,
+              "replacement": false
+            },
+            "18": {
+              "count": 2,
+              "replacement": false
+            }
+          },
+          "allowDrops": true,
+          "type": "feat",
+          "pool": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.cb006ace1bce378b"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.bf639adeb409bafa"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.aaee8d46ab3cb09e"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.62bf66c7b8d672b4"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.f362e5b8817a12b5"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.c521ff3eeded0d83"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.0837717fbf58760e"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.476ee7be4cdd4123"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.56d5f34424146be9"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.40a6474d7e96b0b1"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.64bd08b5a9af955e"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.b73b591b80441443"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.554067d16604b4c1"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.761d4e4c583b498a"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.8696ad359fa008b9"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.613682ceabdb5f06"
+            }
+          ],
+          "restriction": {},
+          "spell": null
+        },
+        "value": {},
+        "level": 0,
+        "title": "Известные инфузии",
+        "icon": ""
+      },
+      {
+        "_id": "487fb5602aaf1dcf",
+        "type": "Subclass",
+        "configuration": {},
+        "value": {},
+        "level": 3,
+        "title": "Специальность изобретателя",
+        "icon": ""
+      },
+      {
+        "_id": "4d4e94ce85bc7402",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {},
+        "level": 4,
+        "title": "Увеличение характеристик",
+        "icon": ""
+      },
+      {
+        "_id": "2a3e8be35581b3d9",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {},
+        "level": 8,
+        "title": "Увеличение характеристик",
+        "icon": ""
+      },
+      {
+        "_id": "e5f2212a8a8e7d90",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {},
+        "level": 12,
+        "title": "Увеличение характеристик",
+        "icon": ""
+      },
+      {
+        "_id": "bef727fa38dec4ec",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {},
+        "level": 16,
+        "title": "Увеличение характеристик",
+        "icon": ""
+      },
+      {
+        "_id": "7ed8708805050071",
+        "type": "AbilityScoreImprovement",
+        "configuration": {
+          "points": 2,
+          "fixed": {},
+          "cap": 2
+        },
+        "value": {},
+        "level": 19,
+        "title": "Увеличение характеристик",
+        "icon": ""
+      },
+      {
+        "_id": "a4af77f48d946827",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.189a7861f8ff30de"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.2ab35480984a3d2c"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 1,
+        "title": "Умения 1-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "43ca653aaff5afc5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.d71a1f8b889c9e14"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 2,
+        "title": "Инфузирование предмета",
+        "icon": ""
+      },
+      {
+        "_id": "96006aad3817f1f6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.aae2cedcd886c044"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Подходящий инструмент",
+        "icon": ""
+      },
+      {
+        "_id": "ca879435ac6cc58c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.1936fc14b3db00be"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 6,
+        "title": "Компетентность во владении инструментами",
+        "icon": ""
+      },
+      {
+        "_id": "6b9ce959e48400b6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.8c92d019dba7e57b"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 7,
+        "title": "Проблеск гениальности",
+        "icon": ""
+      },
+      {
+        "_id": "cc8e4b05ad96fcad",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.8428345e631abb44"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 10,
+        "title": "Эксперт в обращении с магическими предметами",
+        "icon": ""
+      },
+      {
+        "_id": "33c454eb3617e4b4",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.b10e375afa2e8cc0"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 11,
+        "title": "Хранящий заклинания предмет",
+        "icon": ""
+      },
+      {
+        "_id": "80aa41dbab6c8106",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.606cb46f31d48b99"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 14,
+        "title": "Учёный по магическим предметам",
+        "icon": ""
+      },
+      {
+        "_id": "06a3084eed238aaf",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.8ff13b9beb5b308e"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 18,
+        "title": "Мастер в обращении с магическими предметами",
+        "icon": ""
+      },
+      {
+        "_id": "2182c364f6d1b77a",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.0375428baa68601a"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 20,
+        "title": "Душа изобретения",
+        "icon": ""
+      }
+    ],
+    "startingEquipment": []
+  },
+  "effects": [],
+  "folder": "1f88daf749146014",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

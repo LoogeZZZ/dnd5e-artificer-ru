@@ -1,0 +1,65 @@
+{
+  "_id": "8c1b383f86d7490c",
+  "_key": "!items!8c1b383f86d7490c",
+  "name": "Экспериментальный эликсир",
+  "type": "feat",
+  "img": "icons/consumables/potions/bottle-conical-corked-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>После каждого продолжительного отдыха вы можете магически создать один экспериментальный эликсир в склянке, имея под рукой алхимические инструменты. Бросьте по таблице, чтобы определить эффект эликсира (либо выберите эффект). Создание эликсира не требует действия, а склянка пуста, пока вы её не наполните.</p>\n<p>Существо может бонусным действием выпить эликсир или передать его другому существу, до которого может дотянуться. Эффект зависит от типа эликсира (исцеление, стойкость, отвага, прыгучесть, прыткость, прозрение и др.). Любой эликсир теряет силу, если его не выпить до вашего следующего продолжительного отдыха.</p>\n<p>Начиная с 5-го уровня, вы можете создавать дополнительные эликсиры за одну ячейку заклинания (по одному за каждый уровень ячейки), создавая их в момент использования ячейки. Эликсиры, созданные таким образом, должны быть выпиты в течение 1 часа.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

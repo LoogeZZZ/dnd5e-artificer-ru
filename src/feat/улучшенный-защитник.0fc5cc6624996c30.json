@@ -1,0 +1,65 @@
+{
+  "_id": "0fc5cc6624996c30",
+  "_key": "!items!0fc5cc6624996c30",
+  "name": "Улучшенный защитник",
+  "type": "feat",
+  "img": "icons/creatures/mammals/dog-armored-guard-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Магия, наполняющая вашего стального защитника, усилилась.</p>\n<ul>\n<li>Урон от умения «Магическая встряска» увеличивается до 4d6.</li>\n<li>Атака «Сокрушающий удар» стального защитника наносит дополнительно 1d6 силового урона.</li>\n<li>Когда защитник использует реакцию «Отражающая атака», он наносит атакующему силовой урон 1d4 + ваш модификатор Интеллекта.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

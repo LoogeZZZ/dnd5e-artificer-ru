@@ -1,0 +1,65 @@
+{
+  "_id": "ceacb4691a3e962a",
+  "_key": "!items!ceacb4691a3e962a",
+  "name": "Магическая встряска",
+  "type": "feat",
+  "img": "icons/magic/lightning/bolt-strike-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы научились направлять магическую энергию для усиления атак.</p>\n<p>Когда любое существо попадает по цели атакой оружия, а вы видите цель и она в пределах 60 футов, вы можете реакцией направить энергию через ваш стальной защитник (или другую цель в пределах 5 футов от него) и выбрать один эффект: либо атака наносит дополнительно 2d6 силового урона, либо цель восстанавливает 2d6 хитов.</p>\n<p>Вы можете использовать это умение количество раз, равное вашему модификатору Интеллекта (минимум один). Использования восстанавливаются после продолжительного отдыха.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "_id": "ae059631640e6f2d",
+  "_key": "!items!ae059631640e6f2d",
+  "name": "Взрывоопасная пушка",
+  "type": "feat",
+  "img": "icons/magic/fire/explosion-fireball-medium-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Урон, наносимый вашей мистической пушкой, увеличивается на 1d8.</p>\n<p>Кроме того, вы можете действием приказать любой из ваших пушек в пределах 60 футов взорваться. Пушка немедленно уничтожается, а каждое существо в пределах 20 футов от неё должно преуспеть в спасброске Ловкости (Сл равна Сл ваших заклинаний), иначе получает 3d8 силового урона (при провале) или половину при успехе.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "_id": "89bd8c409b1777fc",
+  "_key": "!items!89bd8c409b1777fc",
+  "name": "Мистическое огнестрельное оружие",
+  "type": "feat",
+  "img": "icons/weapons/guns/gun-pistol-flintlock-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы можете использовать столярные инструменты в качестве фокусировки для заклинаний изобретателя. После продолжительного отдыха вы можете коснуться магического или немагического жезла, посоха или подобного предмета и сделать его своим мистическим огнестрельным оружием. Оно служит фокусировкой и используется для создания мистической пушки.</p>\n<p>Когда вы накладываете заклинание изобретателя, наносящее урон, через мистическое огнестрельное оружие, вы можете добавить +1d8 к одному броску урона этого заклинания.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

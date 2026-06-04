@@ -1,0 +1,65 @@
+{
+  "_id": "5919ed6f60c0eca0",
+  "_key": "!items!5919ed6f60c0eca0",
+  "name": "Стальной защитник",
+  "type": "feat",
+  "img": "icons/creatures/mammals/dog-armored-guard-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ваши знания о магии конструктов позволяют вам создать верного защитника. Он Среднего размера, имеет собственные характеристики и подчиняется вашим командам. В бою защитник действует в ваш ход; вы можете бонусным действием мысленно командовать им. Без команды он защищается, оставаясь рядом с вами.</p>\n<p>Хиты защитника равны 2 + ваш модификатор Интеллекта + ваш пятикратный уровень изобретателя. Он может совершать атаку «Сокрушающий удар» (бонус атаки = бонус мастерства + модификатор Интеллекта, урон 1d8 + модификатор мастерства силовым уроном), а реакцией «Отражающая атака» накладывать помеху на атаку по другому существу в пределах 5 футов от себя. Если защитник погибает, вы можете воскресить его за 1 час работы с кузнечными инструментами.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

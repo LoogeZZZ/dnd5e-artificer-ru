@@ -1,0 +1,65 @@
+{
+  "_id": "2d3ffabe86a5c251",
+  "_key": "!items!2d3ffabe86a5c251",
+  "name": "Владение инструментами (Боевой кузнец)",
+  "type": "feat",
+  "img": "icons/tools/smithing/hammer-and-anvil.webp",
+  "system": {
+    "description": {
+      "value": "<p>Когда вы выбираете этот подкласс на 3-м уровне, вы получаете владение кузнечными инструментами. Если вы уже владеете ими, вы получаете владение одним другим типом инструментов ремесленника по вашему выбору.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

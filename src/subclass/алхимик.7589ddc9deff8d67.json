@@ -1,0 +1,116 @@
+{
+  "_id": "7589ddc9deff8d67",
+  "_key": "!items!7589ddc9deff8d67",
+  "name": "Алхимик",
+  "type": "subclass",
+  "img": "icons/consumables/potions/bottle-round-corked-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p>Алхимик — мастер сочетания реагентов для получения волшебных эффектов. Алхимики используют свои творения, чтобы дарить жизнь и отнимать её. Никто не разбирается в зельях и эликсирах лучше алхимика.</p>",
+      "chat": ""
+    },
+    "identifier": "alchemist",
+    "classIdentifier": "artificer",
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "advancement": [
+      {
+        "_id": "d60a6fe9d99df0c5",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.6d662d81533ecf05"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.f03b8a6e95b87954"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.8c1b383f86d7490c"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Умения 3-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "12c7bfdf72b7adaa",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.ee2fd2a976d93117"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Умения 5-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "03e5e66ea813fa00",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.2ca88e55cbed2c31"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Умения 9-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "a5ea9ec27ccf4922",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.14f1f1af976ad8f0"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Умения 15-го уровня",
+        "icon": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": "4b669e5acdfa923a",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

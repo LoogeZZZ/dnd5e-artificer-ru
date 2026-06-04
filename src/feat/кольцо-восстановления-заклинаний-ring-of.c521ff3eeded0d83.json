@@ -1,0 +1,65 @@
+{
+  "_id": "c521ff3eeded0d83",
+  "_key": "!items!c521ff3eeded0d83",
+  "name": "Кольцо восстановления заклинаний (Ring of Spell Restoring)",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-triangle-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Предмет:</strong> кольцо (требуется настройка).</p>\n<p>Пока вы носите это кольцо, оно накапливает остаточную магию, когда вы накладываете заклинания изобретателя. Кольцо имеет 6 зарядов и восстанавливает 1d6 потраченных зарядов на рассвете.</p>\n<p>Действием вы можете потратить заряды кольца, чтобы вернуть себе ячейку заклинания: 1 заряд за ячейку 1-го уровня или 2 заряда за ячейку 2-го уровня. Возвращённая ячейка не может быть выше 2-го уровня.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Инфузия изобретателя",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "e8b8962cd123947e",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

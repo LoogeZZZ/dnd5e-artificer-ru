@@ -1,0 +1,65 @@
+{
+  "_id": "0f1b8ce0c24fbe00",
+  "_key": "!items!0f1b8ce0c24fbe00",
+  "name": "Боевая готовность",
+  "type": "feat",
+  "img": "icons/skills/melee/weapons-crossed-swords-yellow.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ваше боевое мастерство и опыт работы с магией соединяются.</p>\n<ul>\n<li>Вы получаете владение воинским оружием.</li>\n<li>Совершая атаку магическим оружием, к которому вы настроены, вы можете использовать модификатор Интеллекта вместо Силы или Ловкости для бросков атаки и урона этим оружием.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

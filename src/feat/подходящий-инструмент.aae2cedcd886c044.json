@@ -1,0 +1,65 @@
+{
+  "_id": "aae2cedcd886c044",
+  "_key": "!items!aae2cedcd886c044",
+  "name": "Подходящий инструмент",
+  "type": "feat",
+  "img": "icons/tools/smithing/anvil.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы научились создавать любые необходимые вам инструменты.</p>\n<p>Имея под рукой набор инструментов ремесленника, вы можете в течение 1 часа создать любой набор инструментов ремесленника во время короткого или продолжительного отдыха, если у вас есть свободное пространство в инвентаре и доступ к сырью. Время создания сокращается, поскольку вы используете магию.</p>\n<p>Созданный набор существует неопределённо долго, и вы можете создать любое количество таких наборов, пока у вас есть исходные инструменты.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "de003cb2d68843e6",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

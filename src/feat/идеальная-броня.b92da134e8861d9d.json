@@ -1,0 +1,65 @@
+{
+  "_id": "b92da134e8861d9d",
+  "_key": "!items!b92da134e8861d9d",
+  "name": "Идеальная броня",
+  "type": "feat",
+  "img": "icons/equipment/chest/breastplate-banded-steel-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы доводите свой мистический доспех до совершенства в зависимости от выбранной модели.</p>\n<p><strong>Страж.</strong> Бонусным действием вы можете магически притянуть к себе одно существо Большого или меньшего размера, которое видите в пределах 30 футов, если оно провалит спасбросок Силы (Сл равна Сл ваших заклинаний). Притягивание на 30 футов; если существо оказывается в пределах 5 футов, вы можете совершить по нему ближнюю атаку оружием бонусным действием.</p>\n<p><strong>Инфильтратор.</strong> Урон молнией от <em>Молниеносного запуска</em> увеличивается до 2d6. Кроме того, цель, по которой вы попадаете этой атакой, получает помеху на следующий бросок атаки против вас и не может совершать реакции до начала своего следующего хода.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

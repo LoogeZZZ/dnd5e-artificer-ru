@@ -1,0 +1,65 @@
+{
+  "_id": "62bf66c7b8d672b4",
+  "_key": "!items!62bf66c7b8d672b4",
+  "name": "Доспех сопротивления (Armor of Resistance)",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-triangle-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Предмет:</strong> доспех (требуется настройка).</p>\n<p>Пока вы носите этот доспех, вы получаете сопротивление к одному из следующих типов урона по вашему выбору в момент инфузии: звуковому, кислотному, огненному, психическому, силовому, урону молнией, некротической энергией, излучением, холодом или ядом.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Инфузия изобретателя",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "e8b8962cd123947e",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

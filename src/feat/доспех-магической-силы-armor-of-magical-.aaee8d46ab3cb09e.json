@@ -1,0 +1,65 @@
+{
+  "_id": "aaee8d46ab3cb09e",
+  "_key": "!items!aaee8d46ab3cb09e",
+  "name": "Доспех магической силы (Armor of Magical Strength)",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-triangle-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Предмет:</strong> доспех (требуется настройка).</p>\n<p>Доспех имеет количество зарядов, равное вашему модификатору Интеллекта (минимум 1). Пока вы носите его, вы получаете следующие преимущества:</p>\n<ul>\n<li>при проверке Силы или спасброске Силы вы можете потратить заряд, чтобы добавить к броску ваш модификатор Интеллекта;</li>\n<li>если на вас действует эффект, отбрасывающий вас или сбивающий с ног, вы можете реакцией потратить заряд, чтобы избежать этого эффекта.</li>\n</ul>\n<p>Доспех восстанавливает все потраченные заряды после продолжительного отдыха.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Инфузия изобретателя",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "e8b8962cd123947e",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

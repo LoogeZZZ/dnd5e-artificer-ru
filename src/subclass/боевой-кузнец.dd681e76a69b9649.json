@@ -1,0 +1,119 @@
+{
+  "_id": "dd681e76a69b9649",
+  "_key": "!items!dd681e76a69b9649",
+  "name": "Боевой кузнец",
+  "type": "subclass",
+  "img": "icons/skills/melee/sword-hilt-steel-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Армиям нужны воины, способные чинить как боевые машины, так и самих солдат. Боевой кузнец — защитник, прекрасно владеющий оружием и спутником-конструктом, который сражается рядом с ним.</p>",
+      "chat": ""
+    },
+    "identifier": "battlesmith",
+    "classIdentifier": "artificer",
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "advancement": [
+      {
+        "_id": "493f497368e9e9df",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.2d3ffabe86a5c251"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.2f3c0f2b17a35ec3"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.0f1b8ce0c24fbe00"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.5919ed6f60c0eca0"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Умения 3-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "201993c83c7e43c1",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.30eb39efe39c8a13"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Умения 5-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "5116afb7d76a8f8b",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.ceacb4691a3e962a"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Умения 9-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "3b8a6653ec2c96e0",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.0fc5cc6624996c30"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Умения 15-го уровня",
+        "icon": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": "4b669e5acdfa923a",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

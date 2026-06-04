@@ -1,0 +1,61 @@
+{
+  "id": "dnd5e-artificer-ru",
+  "title": "Изобретатель (Artificer) — RU",
+  "description": "Класс «Изобретатель» (Artificer) из Tasha's Cauldron of Everything на русском языке: класс 1–20 ур., все классовые умения, 16 инфузий и 4 подкласса (Алхимик, Артиллерист, Боевой кузнец, Бронник). Готовый компендиум для системы D&D 5e в Foundry VTT v13.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Изобретатель RU",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "12",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "izobretatel",
+      "label": "Изобретатель (Artificer)",
+      "banner": "",
+      "path": "packs/izobretatel",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Изобретатель (Artificer)",
+      "sorting": "m",
+      "color": "#7a3b9e",
+      "packs": ["izobretatel"]
+    }
+  ],
+  "languages": [
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "url": "https://github.com/LoogeZzZ/dnd5e-artificer-ru",
+  "manifest": "https://raw.githubusercontent.com/LoogeZzZ/dnd5e-artificer-ru/main/module.json",
+  "download": "https://github.com/LoogeZzZ/dnd5e-artificer-ru/archive/refs/heads/main.zip"
+}

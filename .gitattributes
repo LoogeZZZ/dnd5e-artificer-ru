@@ -1,0 +1,7 @@
+# LevelDB pack — бинарные файлы, без конвертации концов строк
+packs/** binary
+
+# Текстовые исходники — нормализуем к LF
+*.json text eol=lf
+*.mjs text eol=lf
+*.md text eol=lf

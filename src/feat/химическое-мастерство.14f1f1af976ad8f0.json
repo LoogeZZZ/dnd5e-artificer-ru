@@ -1,0 +1,65 @@
+{
+  "_id": "14f1f1af976ad8f0",
+  "_key": "!items!14f1f1af976ad8f0",
+  "name": "Химическое мастерство",
+  "type": "feat",
+  "img": "icons/magic/death/skull-poison-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы создали столько целебных и вредоносных химикатов, что обрели к ним устойчивость.</p>\n<ul>\n<li>Вы получаете сопротивление к кислотному и ядовитому урону, а также иммунитет к состоянию «отравление».</li>\n<li>Вы всегда держите подготовленными заклинания <em>greater restoration (высшее восстановление)</em> и <em>heal (исцеление)</em>. Вы можете накладывать каждое из них один раз без траты ячейки заклинания и без материальных компонентов; восстанавливаются после продолжительного отдыха.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

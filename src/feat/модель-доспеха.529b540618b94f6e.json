@@ -1,0 +1,65 @@
+{
+  "_id": "529b540618b94f6e",
+  "_key": "!items!529b540618b94f6e",
+  "name": "Модель доспеха",
+  "type": "feat",
+  "img": "icons/equipment/chest/breastplate-helmet-metal.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы настраиваете мистический доспех под одну из двух моделей: Страж или Инфильтратор. Модель можно сменить, потратив 1 час за кузнечными инструментами.</p>\n<p><strong>Страж.</strong> Доспех получает <em>Громовые рукавицы</em>: ближняя атака рукавицами (Сила + бонус мастерства) наносит 1d8 + Сила громового урона, а при попадании цель получает помеху на атаки по всем, кроме вас, до начала вашего следующего хода. Также <em>Защитная развёртка</em>: реакцией наложить помеху на бросок атаки против вас или союзника в пределах 30 футов (использований = модификатор Интеллекта, восстанавливаются после продолжительного отдыха).</p>\n<p><strong>Инфильтратор.</strong> Доспех получает <em>Молниеносный запуск</em>: дальнобойная/ближняя атака (Ловкость или Интеллект + бонус мастерства, дальность 90/300) наносит 1d6 урона молнией; одна цель за ход дополнительно получает 1d6 урона молнией. Также скорость +5 футов и преимущество на проверки Скрытности.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

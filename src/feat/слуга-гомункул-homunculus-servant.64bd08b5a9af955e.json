@@ -1,0 +1,65 @@
+{
+  "_id": "64bd08b5a9af955e",
+  "_key": "!items!64bd08b5a9af955e",
+  "name": "Слуга-гомункул (Homunculus Servant)",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-triangle-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Предмет:</strong> драгоценный камень или хрусталь стоимостью не менее 100 зм (требуется настройка).</p>\n<p>Вы создаёте магического слугу-гомункула, который служит вам. Он крошечный конструкт со своими характеристиками. Его хиты равны 1 + ваш модификатор Интеллекта + ваш уровень изобретателя. В бою гомункул действует в ваш ход, и вы можете бонусным действием мысленно командовать им (перемещение и действие).</p>\n<p>Гомункул может совершать атаку «Сокрушительный разряд» с бонусом, равным вашему бонусу атаки заклинанием, нанося силовой урон 1d4 + ваш модификатор Интеллекта. Реакцией он может даровать вам преимущество на бросок атаки по существу в пределах 5 футов от него. Если гомункул погибает, вы можете восстановить его, потратив час и исходный камень.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Инфузия изобретателя",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "e8b8962cd123947e",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

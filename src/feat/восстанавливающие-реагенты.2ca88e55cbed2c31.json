@@ -1,0 +1,65 @@
+{
+  "_id": "2ca88e55cbed2c31",
+  "_key": "!items!2ca88e55cbed2c31",
+  "name": "Восстанавливающие реагенты",
+  "type": "feat",
+  "img": "icons/consumables/potions/bottle-bulb-corked-green.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы научились использовать восстанавливающие свойства алхимии.</p>\n<ul>\n<li>Всякий раз, когда существо выпивает ваш экспериментальный эликсир, оно дополнительно получает количество временных хитов, равное 2d6 + ваш модификатор Интеллекта (минимум +1).</li>\n<li>Вы можете накладывать заклинание <em>скорая помощь</em> без траты ячейки заклинания и без материальных компонентов количество раз, равное вашему модификатору Интеллекта (минимум один). Использования восстанавливаются после продолжительного отдыха.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

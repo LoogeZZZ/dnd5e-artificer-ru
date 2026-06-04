@@ -1,0 +1,65 @@
+{
+  "_id": "0837717fbf58760e",
+  "_key": "!items!0837717fbf58760e",
+  "name": "Копия магического предмета (Replicate Magic Item)",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-triangle-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p>Используя эту инфузию, вы повторяете определённый магический предмет. Выбирая эту инфузию, вы должны выбрать один магический предмет, который сможете создавать, из таблиц «Копируемые предметы» в книге Tasha's Cauldron of Everything (например: «Сапоги эльфов», «Сумка хранения», «Перчатки воровства», «Очки ночи», «Накидка эльфов», «Шлем непробиваемости», «Поясная сумка хранения», «Жезл паутины» и многие другие).</p>\n<p>В этих таблицах указано, требует ли предмет настройки. Вы можете выбирать эту инфузию несколько раз, каждый раз выбирая новый предмет. На более высоких уровнях изобретателя вам становятся доступны предметы из таблиц для 6-го, 10-го и 14-го уровней.</p>\n<p>Скопированный предмет функционирует как обычный экземпляр данного магического предмета.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Инфузия изобретателя",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "e8b8962cd123947e",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

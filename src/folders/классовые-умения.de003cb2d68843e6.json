@@ -1,0 +1,22 @@
+{
+  "_id": "de003cb2d68843e6",
+  "_key": "!folders!de003cb2d68843e6",
+  "name": "Классовые умения",
+  "type": "Item",
+  "sorting": "m",
+  "folder": null,
+  "description": "",
+  "color": "#7a3b9e",
+  "sort": 300000,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

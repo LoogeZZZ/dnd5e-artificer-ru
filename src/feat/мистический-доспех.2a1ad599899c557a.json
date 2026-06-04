@@ -1,0 +1,65 @@
+{
+  "_id": "2a1ad599899c557a",
+  "_key": "!items!2a1ad599899c557a",
+  "name": "Мистический доспех",
+  "type": "feat",
+  "img": "icons/equipment/chest/breastplate-rivited-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ваше мастерство позволяет превратить доспех в продолжение тела. Действием вы можете коснуться доспеха (не латного и не силового), которым владеете, и превратить его в мистический доспех. Преимущества:</p>\n<ul>\n<li>вы получаете +1 к КД от этого доспеха, и он считается надетым на вас (его нельзя снять против вашей воли, пока вы живы);</li>\n<li>доспех заменяет отсутствующие конечности и не требует других существ для надевания/снятия;</li>\n<li>вам не нужно владеть доспехом, чтобы получать его преимущества, а доспех заменяет любые недостающие материальные компоненты заклинаний без стоимости;</li>\n<li>вы можете надеть и снять его как часть продолжительного отдыха.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

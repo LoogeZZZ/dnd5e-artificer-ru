@@ -1,0 +1,65 @@
+{
+  "_id": "b476bab1de695ab9",
+  "_key": "!items!b476bab1de695ab9",
+  "name": "Укреплённая позиция",
+  "type": "feat",
+  "img": "icons/magic/defensive/shield-barrier-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы научились создавать защищённую позицию вокруг своей пушки.</p>\n<ul>\n<li>Вы и ваши союзники получаете половинное укрытие, находясь в пределах 10 футов от вашей мистической пушки благодаря мерцающему полю энергии.</li>\n<li>Вы можете иметь активными одновременно две мистические пушки (вы можете создать обе одним действием, и активировать обе одним бонусным действием). Однако вы не можете создать третью, пока активна хотя бы одна.</li>\n</ul>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

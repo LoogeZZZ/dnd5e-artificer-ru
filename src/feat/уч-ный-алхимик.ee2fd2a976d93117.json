@@ -1,0 +1,65 @@
+{
+  "_id": "ee2fd2a976d93117",
+  "_key": "!items!ee2fd2a976d93117",
+  "name": "Учёный алхимик",
+  "type": "feat",
+  "img": "icons/magic/life/heart-glowing-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Ваш опыт с алхимическими реагентами усиливает некоторые из ваших заклинаний.</p>\n<p>Когда вы держите алхимические инструменты и накладываете заклинание изобретателя, восстанавливающее хиты или наносящее урон кислотой, огнём, некротической энергией или ядом, вы добавляете ваш модификатор Интеллекта (минимум +1) к одному броску исцеления или урона этого заклинания.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "subclass",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "20ebed91282adc28",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

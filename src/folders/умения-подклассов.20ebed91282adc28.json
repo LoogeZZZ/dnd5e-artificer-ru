@@ -1,0 +1,22 @@
+{
+  "_id": "20ebed91282adc28",
+  "_key": "!folders!20ebed91282adc28",
+  "name": "Умения подклассов",
+  "type": "Item",
+  "sorting": "m",
+  "folder": null,
+  "description": "",
+  "color": "#7a3b9e",
+  "sort": 400000,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

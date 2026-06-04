@@ -1,0 +1,65 @@
+{
+  "_id": "8ff13b9beb5b308e",
+  "_key": "!items!8ff13b9beb5b308e",
+  "name": "Мастер в обращении с магическими предметами",
+  "type": "feat",
+  "img": "icons/magic/symbols/runes-carved-stone-red.webp",
+  "system": {
+    "description": {
+      "value": "<p>Вы можете носить и поддерживать огромное количество магической силы.</p>\n<p>Вы можете быть настроены одновременно на шесть магических предметов.</p>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "requirements": "Изобретатель",
+    "type": {
+      "value": "class",
+      "subtype": ""
+    },
+    "properties": [],
+    "activation": {
+      "type": "",
+      "value": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    }
+  },
+  "effects": [],
+  "folder": "de003cb2d68843e6",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "dnd5e-artificer-ru-build",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Build tooling for the Изобретатель (Artificer) RU Foundry module",
+  "dependencies": {
+    "classic-level": "^1.4.1"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "_id": "c633107758640876",
+  "_key": "!items!c633107758640876",
+  "name": "Артиллерист",
+  "type": "subclass",
+  "img": "icons/weapons/artillery/cannon-engraved-gold.webp",
+  "system": {
+    "description": {
+      "value": "<p>Артиллерист специализируется на использовании магии для метания энергии, снарядов и взрывов на поле боя. Такая разрушительная мощь высоко ценится в армиях многих миров.</p>",
+      "chat": ""
+    },
+    "identifier": "artillerist",
+    "classIdentifier": "artificer",
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "advancement": [
+      {
+        "_id": "7fd72bda5e00d014",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.550febdab3b93f68"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.dda2a7a01c2e75d3"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.38b8230e06b0e00c"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Умения 3-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "41a832f2bf438462",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.89bd8c409b1777fc"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Умения 5-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "15c5365a00ba9192",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.ae059631640e6f2d"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Умения 9-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "cb254f2cf9fa1b3c",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.b476bab1de695ab9"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Умения 15-го уровня",
+        "icon": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": "4b669e5acdfa923a",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

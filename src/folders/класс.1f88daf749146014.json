@@ -1,0 +1,22 @@
+{
+  "_id": "1f88daf749146014",
+  "_key": "!folders!1f88daf749146014",
+  "name": "Класс",
+  "type": "Item",
+  "sorting": "m",
+  "folder": null,
+  "description": "",
+  "color": "#7a3b9e",
+  "sort": 100000,
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}

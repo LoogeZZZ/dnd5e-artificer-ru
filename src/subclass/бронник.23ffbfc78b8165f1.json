@@ -1,0 +1,119 @@
+{
+  "_id": "23ffbfc78b8165f1",
+  "_key": "!items!23ffbfc78b8165f1",
+  "name": "Бронник",
+  "type": "subclass",
+  "img": "icons/equipment/chest/breastplate-banded-steel-grey.webp",
+  "system": {
+    "description": {
+      "value": "<p>Изобретатель, ставший Бронником, изменяет свой доспех так, что он становится почти второй кожей. Усовершенствованный доспех помогает магии изобретателя, усиливает удары и служит крепкой защитой. (Источник: Tasha's Cauldron of Everything.)</p>",
+      "chat": ""
+    },
+    "identifier": "armorer",
+    "classIdentifier": "artificer",
+    "source": {
+      "custom": "Tasha's Cauldron of Everything",
+      "book": "TCoE"
+    },
+    "advancement": [
+      {
+        "_id": "1a52bd7ac62a0de6",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.4dfc6707cf013f0e"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.272728659ab873c7"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.2a1ad599899c557a"
+            },
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.529b540618b94f6e"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 3,
+        "title": "Умения 3-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "31bfc334e5f28af7",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.20fbaad45c91c112"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 5,
+        "title": "Умения 5-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "5dec4ced06333611",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.27553931f0ee3b26"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 9,
+        "title": "Умения 9-го уровня",
+        "icon": ""
+      },
+      {
+        "_id": "5ba3883987f34e95",
+        "type": "ItemGrant",
+        "configuration": {
+          "items": [
+            {
+              "uuid": "Compendium.dnd5e-artificer-ru.izobretatel.Item.b92da134e8861d9d"
+            }
+          ],
+          "optional": false,
+          "spell": null
+        },
+        "value": {},
+        "level": 15,
+        "title": "Умения 15-го уровня",
+        "icon": ""
+      }
+    ],
+    "spellcasting": {
+      "progression": "none",
+      "ability": ""
+    }
+  },
+  "effects": [],
+  "folder": "4b669e5acdfa923a",
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerrubuilder",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}
