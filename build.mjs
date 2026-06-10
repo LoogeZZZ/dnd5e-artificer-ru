@@ -36,7 +36,7 @@ const FOLDERS = [
   { key: "folder-subfeat", name: "Умения подклассов" },
   { key: "folder-infusion", name: "Инфузии" }
 ];
-const folderId = (key) => id("FOLDER:" + key);
+const folderId = (key) => id(`FOLDER:${key}`);
 
 function folderDoc(f, sort) {
   const _id = folderId(f.key);
@@ -57,7 +57,7 @@ function folderDoc(f, sort) {
 
 // ---------- Базовый предмет «умение» (feat) ----------
 function featDoc(spec, { folderKey, subtype }) {
-  const _id = id("FEAT:" + spec.key);
+  const _id = id(`FEAT:${spec.key}`);
   return {
     _id,
     _key: `!items!${_id}`,
@@ -87,11 +87,10 @@ function featDoc(spec, { folderKey, subtype }) {
 
 // ---------- Инфузия (feat) ----------
 function infusionDoc(inf) {
-  const doc = featDoc(
-    { key: "INF:" + inf.key, name: `${inf.name} (${inf.en})`, img: "icons/magic/symbols/runes-triangle-orange.webp", html: inf.html, requirements: "Инфузия изобретателя" },
+  return featDoc(
+    { key: `INF:${inf.key}`, name: `${inf.name} (${inf.en})`, img: "icons/magic/symbols/runes-triangle-orange.webp", html: inf.html, requirements: "Инфузия изобретателя" },
     { folderKey: "folder-infusion", subtype: "class" }
   );
-  return doc;
 }
 
 // ---------- Advancement-конструкторы ----------
@@ -106,7 +105,7 @@ const advHitPoints = () => ({
 });
 
 const advASI = (level) => ({
-  _id: id("ADV:asi:" + level),
+  _id: id(`ADV:asi:${level}`),
   type: "AbilityScoreImprovement",
   configuration: { points: 2, fixed: {}, cap: 2 },
   value: {},
@@ -116,7 +115,7 @@ const advASI = (level) => ({
 });
 
 const advTrait = (key, level, title, configuration) => ({
-  _id: id("ADV:trait:" + key),
+  _id: id(`ADV:trait:${key}`),
   type: "Trait",
   configuration: { hint: "", mode: "default", allowReplacements: false, grants: [], choices: [], ...configuration },
   value: {},
@@ -126,7 +125,7 @@ const advTrait = (key, level, title, configuration) => ({
 });
 
 const advScale = (identifier, title, scale) => ({
-  _id: id("ADV:scale:" + identifier),
+  _id: id(`ADV:scale:${identifier}`),
   type: "ScaleValue",
   configuration: { identifier, type: "number", distance: { units: "" }, scale },
   value: {},
@@ -200,7 +199,7 @@ function classDoc() {
   const advancement = [
     advHitPoints(),
     advTrait("saves", 1, "Спасброски", { grants: ["saves:con", "saves:int"] }),
-    advTrait("armor", 1, "Доспехи и оружие", { grants: ["armor:lgt", "armor:med", "armor:shield", "weapon:sim", "tool:thief", "tool:tinker"] }),
+    advTrait("armor", 1, "Доспехи, оружие и инструменты", { grants: ["armor:lgt", "armor:med", "armor:shield", "weapon:sim", "tool:thief", "tool:tinker"] }),
     advTrait("skills", 1, "Навыки", {
       choices: [{ count: 2, pool: ["skills:arc", "skills:his", "skills:inv", "skills:med", "skills:nat", "skills:prc", "skills:slt"] }]
     }),
@@ -210,7 +209,7 @@ function classDoc() {
     advSubclass(),
     ...[4, 8, 12, 16, 19].map(advASI),
     ...Object.entries(grantsByLevel).map(([lvl, [keys, title]]) =>
-      advItemGrant("L" + lvl, Number(lvl), keys.map(featUuid), title))
+      advItemGrant(`L${lvl}`, Number(lvl), keys.map(featUuid), title))
   ];
 
   return {
@@ -263,14 +262,14 @@ function classDoc() {
 
 // ---------- Подкласс ----------
 function subclassDoc(sub) {
-  const _id = id("SUBCLASS:" + sub.key);
+  const _id = id(`SUBCLASS:${sub.key}`);
   const byLevel = {};
   for (const f of sub.features) (byLevel[f.level] ??= []).push(f);
   const advancement = [
     ...Object.entries(byLevel).map(([lvl, feats]) =>
-      advItemGrant("SUB:" + sub.key + ":L" + lvl, Number(lvl),
-        feats.map((f) => uuid(id("FEAT:" + f.key))),
-        "Умения " + lvl + "-го уровня"))
+      advItemGrant(`SUB:${sub.key}:L${lvl}`, Number(lvl),
+        feats.map((f) => uuid(id(`FEAT:${f.key}`))),
+        `Умения ${lvl}-го уровня`))
   ];
   return {
     _id,
@@ -328,10 +327,13 @@ for (const d of docs) {
 rmSync(PACK_DIR, { recursive: true, force: true });
 mkdirSync(PACK_DIR, { recursive: true });
 const db = new ClassicLevel(PACK_DIR, { keyEncoding: "utf8", valueEncoding: "json" });
-const batch = db.batch();
-for (const d of docs) batch.put(d._key, d);
-await batch.write();
-await db.close();
+try {
+  const batch = db.batch();
+  for (const d of docs) batch.put(d._key, d);
+  await batch.write();
+} finally {
+  await db.close();
+}
 
 const counts = docs.reduce((a, d) => {
   const k = d._key.startsWith("!folders!") ? "folders" : d.type;
