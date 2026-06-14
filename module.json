@@ -38,6 +38,17 @@
         "ASSISTANT": "OWNER"
       },
       "flags": {}
+    },
+    {
+      "name": "izobretatel-zaklinaniya",
+      "label": "Заклинания изобретателя",
+      "path": "packs/izobretatel-zaklinaniya",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
     }
   ],
   "packFolders": [
@@ -45,7 +56,7 @@
       "name": "Изобретатель (Artificer)",
       "sorting": "m",
       "color": "#7a3b9e",
-      "packs": ["izobretatel"]
+      "packs": ["izobretatel", "izobretatel-zaklinaniya"]
     }
   ],
   "languages": [
@@ -55,6 +66,13 @@
       "path": "lang/ru.json"
     }
   ],
+  "flags": {
+    "dnd5e": {
+      "spellLists": [
+        "Compendium.dnd5e-artificer-ru.izobretatel-zaklinaniya.JournalEntry.e5efce0a38f5e292.JournalEntryPage.ba6736e59710162a"
+      ]
+    }
+  },
   "url": "https://github.com/LoogeZZZ/dnd5e-artificer-ru",
   "manifest": "https://raw.githubusercontent.com/LoogeZZZ/dnd5e-artificer-ru/main/module.json",
   "download": "https://github.com/LoogeZZZ/dnd5e-artificer-ru/archive/refs/heads/main.zip"

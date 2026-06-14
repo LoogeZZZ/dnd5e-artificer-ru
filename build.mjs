@@ -3,17 +3,20 @@
 // 2) Пишет читаемые исходники в src/.
 // 3) Компилирует LevelDB-пак в packs/izobretatel.
 import { createHash } from "node:crypto";
-import { mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ClassicLevel } from "classic-level";
 import { CLASS_FEATURES, INFUSIONS, SUBCLASSES } from "./content.mjs";
 import { MECH } from "./mech.mjs";
+import { ARTIFICER_SPELLS } from "./spells.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const MODULE = "dnd5e-artificer-ru";
 const PACK = "izobretatel";
 const PACK_DIR = join(ROOT, "packs", PACK);
+const JPACK = "izobretatel-zaklinaniya";
+const JPACK_DIR = join(ROOT, "packs", JPACK);
 const SRC_DIR = join(ROOT, "src");
 
 const id = (seed) => createHash("md5").update(seed).digest("hex").slice(0, 16);
@@ -413,6 +416,55 @@ function subclassDoc(sub) {
   };
 }
 
+// ---------- Список заклинаний (JournalEntry, тип «spells») ----------
+function spellListDocs() {
+  const jid = id("JOURNAL:artificer-spells");
+  const pid = id("JPAGE:artificer-spells");
+  const page = {
+    _id: pid,
+    _key: `!journal.pages!${jid}.${pid}`,
+    name: "Заклинания изобретателя",
+    type: "spells",
+    title: { show: false, level: 1 },
+    image: {},
+    video: { controls: true, volume: 0.5 },
+    src: null,
+    text: { format: 1, content: "" },
+    system: {
+      type: "class",
+      identifier: "artificer",
+      grouping: "level",
+      description: { value: "<p>Список заклинаний класса «Изобретатель» (Tasha's Cauldron of Everything). Связанные заклинания берутся из компендиумов SRD системы dnd5e; отсутствующие в SRD перечислены отдельно — добавьте их вручную из своего источника при необходимости.</p>" },
+      spells: ARTIFICER_SPELLS.linked,
+      unlinkedSpells: ARTIFICER_SPELLS.unlinked.map((u) => ({
+        _id: id("UNL:" + u.name),
+        identifier: identSlug(u.name),
+        name: u.name,
+        system: { level: u.level, school: "" },
+        source: { book: "TCoE", page: "", custom: "", uuid: "" }
+      }))
+    },
+    sort: 0,
+    ownership: { default: -1 },
+    flags: {},
+    category: null,
+    _stats: STATS()
+  };
+  const journal = {
+    _id: jid,
+    _key: `!journal!${jid}`,
+    name: "Заклинания изобретателя",
+    pages: [pid],
+    folder: null,
+    sort: 0,
+    ownership: { default: 0 },
+    flags: {},
+    categories: [],
+    _stats: STATS()
+  };
+  return { journal, page };
+}
+
 // ---------- Сборка ----------
 const docs = [];
 FOLDERS.forEach((f, i) => docs.push(folderDoc(f, (i + 1) * 100000)));
@@ -462,6 +514,26 @@ for (const d of docs) {
 }
 await batch.write();
 await db.close();
+
+// Компиляция пака заклинаний (JournalEntry)
+const { journal, page } = spellListDocs();
+mkdirSync(join(SRC_DIR, "journal"), { recursive: true });
+writeFileSync(join(SRC_DIR, "journal", `${journal._id}.json`), JSON.stringify({ ...journal, pages: [page] }, null, 2), "utf8");
+rmSync(JPACK_DIR, { recursive: true, force: true });
+mkdirSync(JPACK_DIR, { recursive: true });
+const jdb = new ClassicLevel(JPACK_DIR, { keyEncoding: "utf8", valueEncoding: "json" });
+const jbatch = jdb.batch();
+jbatch.put(journal._key, journal);
+jbatch.put(page._key, page);
+await jbatch.write();
+await jdb.close();
+
+// Контроль: UUID страницы списка заклинаний должен быть прописан в module.json flags.dnd5e.spellLists
+const pageUuid = `Compendium.${MODULE}.${JPACK}.JournalEntry.${journal._id}.JournalEntryPage.${page._id}`;
+const manifest = JSON.parse(readFileSync(join(ROOT, "module.json"), "utf8"));
+if (!(manifest.flags?.dnd5e?.spellLists || []).includes(pageUuid))
+  console.warn("ВНИМАНИЕ: module.json flags.dnd5e.spellLists НЕ содержит UUID списка заклинаний:\n  " + pageUuid);
+else console.log("Список заклинаний прописан в module.json:", pageUuid);
 
 const counts = docs.reduce((a, d) => {
   const k = d._key.startsWith("!folders!") ? "folders" : d.type;

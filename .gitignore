@@ -10,3 +10,6 @@ packs/**/LOG.old
 .mech-assembled.json
 repro*.mjs
 repro*.png
+
+# Промежуточный вывод сопоставления заклинаний
+.spell-list.json

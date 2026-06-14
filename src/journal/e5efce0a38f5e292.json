@@ -1,0 +1,575 @@
+{
+  "_id": "e5efce0a38f5e292",
+  "_key": "!journal!e5efce0a38f5e292",
+  "name": "Заклинания изобретателя",
+  "pages": [
+    {
+      "_id": "ba6736e59710162a",
+      "_key": "!journal.pages!e5efce0a38f5e292.ba6736e59710162a",
+      "name": "Заклинания изобретателя",
+      "type": "spells",
+      "title": {
+        "show": false,
+        "level": 1
+      },
+      "image": {},
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "text": {
+        "format": 1,
+        "content": ""
+      },
+      "system": {
+        "type": "class",
+        "identifier": "artificer",
+        "grouping": "level",
+        "description": {
+          "value": "<p>Список заклинаний класса «Изобретатель» (Tasha's Cauldron of Everything). Связанные заклинания берутся из компендиумов SRD системы dnd5e; отсутствующие в SRD перечислены отдельно — добавьте их вручную из своего источника при необходимости.</p>"
+        },
+        "spells": [
+          "Compendium.dnd5e.spells.Item.JLTQyqXEaJDrTXyW",
+          "Compendium.dnd5e.spells.Item.CAxSzHWizrafT033",
+          "Compendium.dnd5e.spells.Item.EOmsUcFQJTfG2oio",
+          "Compendium.dnd5e.spells.Item.P7mF2MxSuVJwHRRY",
+          "Compendium.dnd5e.spells.Item.Bnn9Nzajixvow9xi",
+          "Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3",
+          "Compendium.dnd5e.spells.Item.kjmjY0zlE6IEiQVL",
+          "Compendium.dnd5e.spells.Item.icZokbgV1jIMpNCv",
+          "Compendium.dnd5e.spells.Item.g2u9PYfqWQAyg9OI",
+          "Compendium.dnd5e.spells.Item.udsLtG0BugXHR2JQ",
+          "Compendium.dnd5e.spells.Item.ctW81uiX56xZR2c5",
+          "Compendium.dnd5e.spells.Item.dl8YwvMboBqX2OC4",
+          "Compendium.dnd5e.spells.Item.XvbiNhNqXXIFisIy",
+          "Compendium.dnd5e.spells.Item.8zT7njvqbpXs4Cel",
+          "Compendium.dnd5e.spells.Item.7p9IuWrSWFgfyQo2",
+          "Compendium.dnd5e.spells.Item.uUWb1wZgtMou0TVP",
+          "Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8",
+          "Compendium.dnd5e.spells.Item.A3q2gTNqG6fvNGrv",
+          "Compendium.dnd5e.spells.Item.zPGohqJRir6MyQ3U",
+          "Compendium.dnd5e.spells.Item.nqBDWkVOfcGZt4YU",
+          "Compendium.dnd5e.spells.Item.7e3QXF10hLNDEdr6",
+          "Compendium.dnd5e.spells.Item.pub0OWVEB71XQx1n",
+          "Compendium.dnd5e.spells.Item.etgcR9wqmrhyZ0tx",
+          "Compendium.dnd5e.spells.Item.3OZnNhunvRtPOQmH",
+          "Compendium.dnd5e.spells.Item.ZrTc23tToJ0JpH2h",
+          "Compendium.dnd5e.spells.Item.B0pnIcc52O6G8hi8",
+          "Compendium.dnd5e.spells.Item.Kn7K5PtYUJAKZTTp",
+          "Compendium.dnd5e.spells.Item.gvdA9nPuWLck4tBl",
+          "Compendium.dnd5e.spells.Item.Opwh2PdX4runSBlm",
+          "Compendium.dnd5e.spells.Item.8RTDOt80u8aBv9qx",
+          "Compendium.dnd5e.spells.Item.8cse7rit0oswRPUP",
+          "Compendium.dnd5e.spells.Item.UDUnlfPsOAbq2RSE",
+          "Compendium.dnd5e.spells.Item.MK6gpQMeDFo0cP9f",
+          "Compendium.dnd5e.spells.Item.hJ6ZiA3fpoY8v9cp",
+          "Compendium.dnd5e.spells.Item.9eOZDBImVKxbeOyZ",
+          "Compendium.dnd5e.spells.Item.WahI41a3goVUg0x1",
+          "Compendium.dnd5e.spells.Item.2yHXEcrRbadZDr5M",
+          "Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B",
+          "Compendium.dnd5e.spells.Item.F0GsG0SJzsIOacwV",
+          "Compendium.dnd5e.spells.Item.MRxldJd6C4bsBo3O",
+          "Compendium.dnd5e.spells.Item.7v06rdmUakoTk1LQ",
+          "Compendium.dnd5e.spells.Item.Sgjrf8qqv97CCWM4",
+          "Compendium.dnd5e.spells.Item.MAxM77CDUu8dgIRQ",
+          "Compendium.dnd5e.spells.Item.ap4dmtshjEbwU3Ts",
+          "Compendium.dnd5e.spells.Item.DQzlB5Y3k791W5bH",
+          "Compendium.dnd5e.spells.Item.KJRVzeMQXPj8Gtyx",
+          "Compendium.dnd5e.spells.Item.UJJu9c2UvCzVljiP",
+          "Compendium.dnd5e.spells.Item.GSvLWcdCZLQkilXT",
+          "Compendium.dnd5e.spells.Item.BV0mpbHh29IbbIj5",
+          "Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8",
+          "Compendium.dnd5e.spells.Item.yfbK8gZqESlaoY5t",
+          "Compendium.dnd5e.spells.Item.2IWiZAJtOGDoKjiz",
+          "Compendium.dnd5e.spells.Item.pB7XVYwdGNcUG935",
+          "Compendium.dnd5e.spells.Item.Szvk5FEVQW3uhJi5",
+          "Compendium.dnd5e.spells.Item.j8NtLXOOJ3GAKF8I",
+          "Compendium.dnd5e.spells.Item.LmRHHMtplpxr9fX6",
+          "Compendium.dnd5e.spells.Item.13uVuBQP6VaiSPvC",
+          "Compendium.dnd5e.spells.Item.YBda6nLKjxdT1LbS",
+          "Compendium.dnd5e.spells.Item.ew6GA8dJy2spQmFW",
+          "Compendium.dnd5e.spells.Item.ImlCJQwR1VL40Qem",
+          "Compendium.dnd5e.spells.Item.7Fw7Bf1k3xxDVr5L",
+          "Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT",
+          "Compendium.dnd5e.spells.Item.QvGcdRUSNRKEQJlK",
+          "Compendium.dnd5e.spells.Item.ReMbjfeOKoSj3O79",
+          "Compendium.dnd5e.spells.Item.ATo0Eb63TDtnu6iA",
+          "Compendium.dnd5e.spells.Item.lnaGnxMzpYnbw1uU",
+          "Compendium.dnd5e.spells.Item.WzvJ7G3cqvIubsLk",
+          "Compendium.dnd5e.spells.Item.NmoRmM1mhuM3pqnY"
+        ],
+        "unlinkedSpells": [
+          {
+            "_id": "e51980ce83599ef9",
+            "identifier": "booming-blade",
+            "name": "Booming Blade",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "b394e8a44c1fa444",
+            "identifier": "create-bonfire",
+            "name": "Create Bonfire",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "ff1c335f745ef460",
+            "identifier": "frostbite",
+            "name": "Frostbite",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "c09f80d7b3fe49ac",
+            "identifier": "green-flame-blade",
+            "name": "Green-Flame Blade",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "055cfc9906fd6810",
+            "identifier": "lightning-lure",
+            "name": "Lightning Lure",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "b5a55585fc213895",
+            "identifier": "magic-stone",
+            "name": "Magic Stone",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "f3c0a4caa9592b75",
+            "identifier": "sword-burst",
+            "name": "Sword Burst",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "4819412209a5dca6",
+            "identifier": "thorn-whip",
+            "name": "Thorn Whip",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "1f0a76087982e160",
+            "identifier": "thunderclap",
+            "name": "Thunderclap",
+            "system": {
+              "level": 0,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "b191d8e17d2a44e3",
+            "identifier": "absorb-elements",
+            "name": "Absorb Elements",
+            "system": {
+              "level": 1,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "a9e09283c98d4d39",
+            "identifier": "catapult",
+            "name": "Catapult",
+            "system": {
+              "level": 1,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "020290da75a2ddb3",
+            "identifier": "snare",
+            "name": "Snare",
+            "system": {
+              "level": 1,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "538e74c8219f58e2",
+            "identifier": "tasha-s-caustic-brew",
+            "name": "Tasha's Caustic Brew",
+            "system": {
+              "level": 1,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "8e56b02c9e0488d3",
+            "identifier": "pyrotechnics",
+            "name": "Pyrotechnics",
+            "system": {
+              "level": 2,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "d267c596b13d9cd7",
+            "identifier": "skywrite",
+            "name": "Skywrite",
+            "system": {
+              "level": 2,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "ec19d02635f70768",
+            "identifier": "catnap",
+            "name": "Catnap",
+            "system": {
+              "level": 3,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "de257b1ef92637a0",
+            "identifier": "elemental-weapon",
+            "name": "Elemental Weapon",
+            "system": {
+              "level": 3,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "501c348f3c0fdb02",
+            "identifier": "flame-arrows",
+            "name": "Flame Arrows",
+            "system": {
+              "level": 3,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "5781fb2da2f07bbd",
+            "identifier": "intellect-fortress",
+            "name": "Intellect Fortress",
+            "system": {
+              "level": 3,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "508d30b43708e1b9",
+            "identifier": "tiny-servant",
+            "name": "Tiny Servant",
+            "system": {
+              "level": 3,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "8be6354ac249584c",
+            "identifier": "elemental-bane",
+            "name": "Elemental Bane",
+            "system": {
+              "level": 4,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "e4dc084697095b34",
+            "identifier": "leomund-s-secret-chest",
+            "name": "Leomund's Secret Chest",
+            "system": {
+              "level": 4,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "c9ede66113ae2982",
+            "identifier": "mordenkainen-s-faithful-hound",
+            "name": "Mordenkainen's Faithful Hound",
+            "system": {
+              "level": 4,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "4c5bcc068d446104",
+            "identifier": "mordenkainen-s-private-sanctum",
+            "name": "Mordenkainen's Private Sanctum",
+            "system": {
+              "level": 4,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "cba58f9aff5e4adf",
+            "identifier": "otiluke-s-resilient-sphere",
+            "name": "Otiluke's Resilient Sphere",
+            "system": {
+              "level": 4,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "22b56f7257c946d2",
+            "identifier": "summon-construct",
+            "name": "Summon Construct",
+            "system": {
+              "level": 4,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "0f6f78e1f7305caa",
+            "identifier": "bigby-s-hand",
+            "name": "Bigby's Hand",
+            "system": {
+              "level": 5,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "a1eaec5ba2a5f078",
+            "identifier": "skill-empowerment",
+            "name": "Skill Empowerment",
+            "system": {
+              "level": 5,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          },
+          {
+            "_id": "0c60532b3e176f58",
+            "identifier": "transmute-rock",
+            "name": "Transmute Rock",
+            "system": {
+              "level": 5,
+              "school": ""
+            },
+            "source": {
+              "book": "TCoE",
+              "page": "",
+              "custom": "",
+              "uuid": ""
+            }
+          }
+        ]
+      },
+      "sort": 0,
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "category": null,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "coreVersion": "13.0.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "artificerru00000",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    }
+  ],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "categories": [],
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "4.0.0",
+    "coreVersion": "13.0.0",
+    "createdTime": 0,
+    "modifiedTime": 0,
+    "lastModifiedBy": "artificerru00000",
+    "compendiumSource": null,
+    "duplicateSource": null
+  }
+}
