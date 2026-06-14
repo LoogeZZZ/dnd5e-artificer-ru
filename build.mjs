@@ -23,7 +23,7 @@ const STATS = () => ({
   coreVersion: "13.0.0",
   createdTime: 0,
   modifiedTime: 0,
-  lastModifiedBy: "artificerrubuilder",
+  lastModifiedBy: "artificerru00000",
   compendiumSource: null,
   duplicateSource: null
 });
@@ -200,7 +200,7 @@ function classDoc() {
   const advancement = [
     advHitPoints(),
     advTrait("saves", 1, "Спасброски", { grants: ["saves:con", "saves:int"] }),
-    advTrait("armor", 1, "Доспехи и оружие", { grants: ["armor:lgt", "armor:med", "armor:shield", "weapon:sim", "tool:thief", "tool:tinker"] }),
+    advTrait("armor", 1, "Доспехи и оружие", { grants: ["armor:lgt", "armor:med", "armor:shl", "weapon:sim", "tool:thief", "tool:tinker"] }),
     advTrait("skills", 1, "Навыки", {
       choices: [{ count: 2, pool: ["skills:arc", "skills:his", "skills:inv", "skills:med", "skills:nat", "skills:prc", "skills:slt"] }]
     }),
