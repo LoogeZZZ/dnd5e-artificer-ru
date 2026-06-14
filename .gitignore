@@ -13,3 +13,7 @@ repro*.png
 
 # Промежуточный вывод сопоставления заклинаний
 .spell-list.json
+
+# scratch инспекторы/временное
+ph-inspect.mjs
+.tmp*

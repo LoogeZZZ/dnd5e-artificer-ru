@@ -1,223 +1,111 @@
 // Список заклинаний класса «Изобретатель» (Tasha's Cauldron of Everything).
-// linked — UUID заклинаний из SRD-паков dnd5e (имена локализуются переводом Babele/PHantom).
-// unlinked — заклинания, отсутствующие в SRD; имя на русском + (English) для поиска при ручном добавлении.
+// linked — UUID русских заклинаний из перевода PHantom (lomeo-dnd5e-phantom, пак zaklinaniya-srd-phantom).
+// unlinked — отсутствующие в переводе; имя на русском + (English) для ручного добавления.
 
 export const ARTIFICER_SPELLS = {
   linked: [
-    "Compendium.dnd5e.spells.Item.JLTQyqXEaJDrTXyW",
-    "Compendium.dnd5e.spells.Item.CAxSzHWizrafT033",
-    "Compendium.dnd5e.spells.Item.EOmsUcFQJTfG2oio",
-    "Compendium.dnd5e.spells.Item.P7mF2MxSuVJwHRRY",
-    "Compendium.dnd5e.spells.Item.Bnn9Nzajixvow9xi",
-    "Compendium.dnd5e.spells.Item.Utk1OQRwYkMkFRD3",
-    "Compendium.dnd5e.spells.Item.kjmjY0zlE6IEiQVL",
-    "Compendium.dnd5e.spells.Item.icZokbgV1jIMpNCv",
-    "Compendium.dnd5e.spells.Item.g2u9PYfqWQAyg9OI",
-    "Compendium.dnd5e.spells.Item.udsLtG0BugXHR2JQ",
-    "Compendium.dnd5e.spells.Item.ctW81uiX56xZR2c5",
-    "Compendium.dnd5e.spells.Item.dl8YwvMboBqX2OC4",
-    "Compendium.dnd5e.spells.Item.XvbiNhNqXXIFisIy",
-    "Compendium.dnd5e.spells.Item.8zT7njvqbpXs4Cel",
-    "Compendium.dnd5e.spells.Item.7p9IuWrSWFgfyQo2",
-    "Compendium.dnd5e.spells.Item.uUWb1wZgtMou0TVP",
-    "Compendium.dnd5e.spells.Item.ghXTfe7sgCbgf1Q8",
-    "Compendium.dnd5e.spells.Item.A3q2gTNqG6fvNGrv",
-    "Compendium.dnd5e.spells.Item.zPGohqJRir6MyQ3U",
-    "Compendium.dnd5e.spells.Item.nqBDWkVOfcGZt4YU",
-    "Compendium.dnd5e.spells.Item.7e3QXF10hLNDEdr6",
-    "Compendium.dnd5e.spells.Item.pub0OWVEB71XQx1n",
-    "Compendium.dnd5e.spells.Item.etgcR9wqmrhyZ0tx",
-    "Compendium.dnd5e.spells.Item.3OZnNhunvRtPOQmH",
-    "Compendium.dnd5e.spells.Item.ZrTc23tToJ0JpH2h",
-    "Compendium.dnd5e.spells.Item.B0pnIcc52O6G8hi8",
-    "Compendium.dnd5e.spells.Item.Kn7K5PtYUJAKZTTp",
-    "Compendium.dnd5e.spells.Item.gvdA9nPuWLck4tBl",
-    "Compendium.dnd5e.spells.Item.Opwh2PdX4runSBlm",
-    "Compendium.dnd5e.spells.Item.8RTDOt80u8aBv9qx",
-    "Compendium.dnd5e.spells.Item.8cse7rit0oswRPUP",
-    "Compendium.dnd5e.spells.Item.UDUnlfPsOAbq2RSE",
-    "Compendium.dnd5e.spells.Item.MK6gpQMeDFo0cP9f",
-    "Compendium.dnd5e.spells.Item.hJ6ZiA3fpoY8v9cp",
-    "Compendium.dnd5e.spells.Item.9eOZDBImVKxbeOyZ",
-    "Compendium.dnd5e.spells.Item.WahI41a3goVUg0x1",
-    "Compendium.dnd5e.spells.Item.2yHXEcrRbadZDr5M",
-    "Compendium.dnd5e.spells.Item.1N8dDMMgZ1h1YJ3B",
-    "Compendium.dnd5e.spells.Item.F0GsG0SJzsIOacwV",
-    "Compendium.dnd5e.spells.Item.MRxldJd6C4bsBo3O",
-    "Compendium.dnd5e.spells.Item.7v06rdmUakoTk1LQ",
-    "Compendium.dnd5e.spells.Item.Sgjrf8qqv97CCWM4",
-    "Compendium.dnd5e.spells.Item.MAxM77CDUu8dgIRQ",
-    "Compendium.dnd5e.spells.Item.ap4dmtshjEbwU3Ts",
-    "Compendium.dnd5e.spells.Item.DQzlB5Y3k791W5bH",
-    "Compendium.dnd5e.spells.Item.KJRVzeMQXPj8Gtyx",
-    "Compendium.dnd5e.spells.Item.UJJu9c2UvCzVljiP",
-    "Compendium.dnd5e.spells.Item.GSvLWcdCZLQkilXT",
-    "Compendium.dnd5e.spells.Item.BV0mpbHh29IbbIj5",
-    "Compendium.dnd5e.spells.Item.15Fa6q1nH27XfbR8",
-    "Compendium.dnd5e.spells.Item.yfbK8gZqESlaoY5t",
-    "Compendium.dnd5e.spells.Item.2IWiZAJtOGDoKjiz",
-    "Compendium.dnd5e.spells.Item.pB7XVYwdGNcUG935",
-    "Compendium.dnd5e.spells.Item.Szvk5FEVQW3uhJi5",
-    "Compendium.dnd5e.spells.Item.j8NtLXOOJ3GAKF8I",
-    "Compendium.dnd5e.spells.Item.LmRHHMtplpxr9fX6",
-    "Compendium.dnd5e.spells.Item.13uVuBQP6VaiSPvC",
-    "Compendium.dnd5e.spells.Item.YBda6nLKjxdT1LbS",
-    "Compendium.dnd5e.spells.Item.ew6GA8dJy2spQmFW",
-    "Compendium.dnd5e.spells.Item.ImlCJQwR1VL40Qem",
-    "Compendium.dnd5e.spells.Item.7Fw7Bf1k3xxDVr5L",
-    "Compendium.dnd5e.spells.Item.da0a1t2FqaTjRZGT",
-    "Compendium.dnd5e.spells.Item.QvGcdRUSNRKEQJlK",
-    "Compendium.dnd5e.spells.Item.ReMbjfeOKoSj3O79",
-    "Compendium.dnd5e.spells.Item.ATo0Eb63TDtnu6iA",
-    "Compendium.dnd5e.spells.Item.lnaGnxMzpYnbw1uU",
-    "Compendium.dnd5e.spells.Item.WzvJ7G3cqvIubsLk",
-    "Compendium.dnd5e.spells.Item.NmoRmM1mhuM3pqnY"
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.atp8Quka3akpmHfP",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.m2BUp6zGaYqRRuEM",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.mfl2Lv9Pm6cenWw1",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.FGRuR03mCAeI8QgU",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.p29BOA5ZCXiMe4QR",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.3Vim7TzXGhUr6xz9",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.1LpNoxGcU5IAILuk",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.tPbEYPdCzjkj7iV4",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.DHsPEIrfujLbnILF",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.VTAlSzutOQNz52o5",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.4Vn1dTQyVyR3PK23",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.NOH0lOEOEta89REr",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.T3y4Nhu9zauZp967",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.muVm1SBboE5COQ0V",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.crn0ax4UoWFwTNED",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.SnFgburpa4bXlL95",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.qs5WwULAi0XsRsQW",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.vcmLXC0vvENpfMHG",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.uvAXujiLMA40JnA7",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.fryX4z7A3DRlOMWO",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.MzUVKVrTEt0nEjhK",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.Cxn3lMDyB5XuwqBO",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.dIdlWsSaS25BamhC",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.zaxfSZqdC8uIDLkA",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.QxZ2hJK5A1IgFNnB",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.n4Bo9i1mfPweU6Y6",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.fWjs04Qi56hSAahL",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.5NTYVOH9X9E2PqAU",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.yiRj0YhbawWS2MzW",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.gZxCdrShqW8xuGVL",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.STzsulsuvc7arHj1",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.snCSoqHQG8typtE2",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.t4Qs4Oz3LRP5GruL",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.EEuaUmJI3hrf3s82",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.jwREc2LzGHBMzEKp",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.2PBCa4djtcge7zj1",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.AOIjFbEypF8tJT3k",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.F1NyJiKj7zhwdNu2",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.FmQGILu98bWHEBTq",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.6cy1wbYlXD08wuJ8",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.vGOX5p1ESOgPHWfx",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.25lYr2OSHHw9SbWS",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.TLji9UMob9OIVzI0",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.F3oZg0xPomTMSrCq",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.vldInnzXqIx6T57x",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.zNavryzQ0oOTTNWU",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.1cvTIiRH6ctCm9yj",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.gdX1Ri7aeSfAO8gn",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.r3DcwIFlKTor2BNT",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.MsBz7ZwW260Eoj4h",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.2jd7amIjTX8iBLFu",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.8fNdSmYgRuU42Mlm",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.kxfTkkq391Zo3Whz",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.D6mmXEWDKXWXOU7U",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.i87mEr5IEZ15NTEH",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.RrVj9QOUwHdrayAF",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.P7MHr9cr3FfU3ksW",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.xQ1COGvaD6Bvw3g3",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.J2weNVeYm6MwgPzx",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.GaJj0mTr18bPqRWn",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.XtExlRFDeGasBFXk",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.4UeSAs0A2JuW2OVJ",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.Y2Gw3ewdu7Ezah9o",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.LCgISqPelw305VBa",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.pEyvag4KbViLPQXj",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.rp1PeGnoNU0GUg8u",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.fBsGBnxrmPheuAF7",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.bSlWwlLhicP6ORk7",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.T2MBQa8romOB3MVA",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.iozfP0wJNrNk6XsI",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.ulBWsf1lDpF5upyh",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.mHCXFCr6Ktfl8Cnt",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.lsgHcSLhyCdwg0Ec",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.R8VKoRDxbJBfKDws",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.5WYrNo9fQE9dPUll",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.8ZgEnjp2ZEsKcEIc",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.6hH3lyEoAzO07LLJ",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.mq4wdtljFQrgH8ud",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.p6YDj8lMyqKgd50I",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.XycbVPmLvOkt0JuV",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.gk8DDV3mdIqJNouJ",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.dqwdhIgSV54rltjC",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.XIA0agfx9wkwqvji",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.03hRbPtMlxTiw6FB",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.PUNpwnTguQt2Fi8t",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.N4G6dYhnK1cl2Gb1",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.aAz61tD8pLlE5rbP",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.I2UApFzsMNvK6qiF",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.ds2Rb6TUVQmWnL22",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.LJHKcRhFmjheT8cy",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.GZ6fpgEyy5jn53PW",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.rND25ldT4tJFe6Fw",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.WWKwCw3r2r7oPYT8",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.r0pPgcWrO6qcxBgw",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.YwIcN6xYq7CkhzRS",
+    "Compendium.lomeo-dnd5e-phantom.zaklinaniya-srd-phantom.Item.k1703wUJbk6AhoHp"
   ],
   unlinked: [
-    {
-      "name": "Гулкий клинок (Booming Blade)",
-      "en": "Booming Blade",
-      "level": 0
-    },
-    {
-      "name": "Сотворение костра (Create Bonfire)",
-      "en": "Create Bonfire",
-      "level": 0
-    },
-    {
-      "name": "Обморожение (Frostbite)",
-      "en": "Frostbite",
-      "level": 0
-    },
-    {
-      "name": "Клинок зелёного пламени (Green-Flame Blade)",
-      "en": "Green-Flame Blade",
-      "level": 0
-    },
-    {
-      "name": "Манок молнии (Lightning Lure)",
-      "en": "Lightning Lure",
-      "level": 0
-    },
-    {
-      "name": "Волшебный камень (Magic Stone)",
-      "en": "Magic Stone",
-      "level": 0
-    },
-    {
-      "name": "Взрыв клинков (Sword Burst)",
-      "en": "Sword Burst",
-      "level": 0
-    },
-    {
-      "name": "Терновый кнут (Thorn Whip)",
-      "en": "Thorn Whip",
-      "level": 0
-    },
-    {
-      "name": "Раскат грома (Thunderclap)",
-      "en": "Thunderclap",
-      "level": 0
-    },
-    {
-      "name": "Поглощение стихий (Absorb Elements)",
-      "en": "Absorb Elements",
-      "level": 1
-    },
-    {
-      "name": "Катапульта (Catapult)",
-      "en": "Catapult",
-      "level": 1
-    },
-    {
-      "name": "Силок (Snare)",
-      "en": "Snare",
-      "level": 1
-    },
-    {
-      "name": "Едкое варево Таши (Tasha's Caustic Brew)",
-      "en": "Tasha's Caustic Brew",
-      "level": 1
-    },
-    {
-      "name": "Пиротехника (Pyrotechnics)",
-      "en": "Pyrotechnics",
-      "level": 2
-    },
-    {
-      "name": "Небесное послание (Skywrite)",
-      "en": "Skywrite",
-      "level": 2
-    },
-    {
-      "name": "Кошачий сон (Catnap)",
-      "en": "Catnap",
-      "level": 3
-    },
-    {
-      "name": "Стихийное оружие (Elemental Weapon)",
-      "en": "Elemental Weapon",
-      "level": 3
-    },
-    {
-      "name": "Огненные стрелы (Flame Arrows)",
-      "en": "Flame Arrows",
-      "level": 3
-    },
-    {
-      "name": "Крепость интеллекта (Intellect Fortress)",
-      "en": "Intellect Fortress",
-      "level": 3
-    },
-    {
-      "name": "Крошечный слуга (Tiny Servant)",
-      "en": "Tiny Servant",
-      "level": 3
-    },
-    {
-      "name": "Стихийная погибель (Elemental Bane)",
-      "en": "Elemental Bane",
-      "level": 4
-    },
-    {
-      "name": "Тайный сундук Леомунда (Leomund's Secret Chest)",
-      "en": "Leomund's Secret Chest",
-      "level": 4
-    },
-    {
-      "name": "Верный пёс Морденкайнена (Mordenkainen's Faithful Hound)",
-      "en": "Mordenkainen's Faithful Hound",
-      "level": 4
-    },
-    {
-      "name": "Уединённое убежище Морденкайнена (Mordenkainen's Private Sanctum)",
-      "en": "Mordenkainen's Private Sanctum",
-      "level": 4
-    },
     {
       "name": "Упругая сфера Отилюка (Otiluke's Resilient Sphere)",
       "en": "Otiluke's Resilient Sphere",
       "level": 4
-    },
-    {
-      "name": "Призыв конструкта (Summon Construct)",
-      "en": "Summon Construct",
-      "level": 4
-    },
-    {
-      "name": "Рука Бигби (Bigby's Hand)",
-      "en": "Bigby's Hand",
-      "level": 5
-    },
-    {
-      "name": "Усиление навыка (Skill Empowerment)",
-      "en": "Skill Empowerment",
-      "level": 5
-    },
-    {
-      "name": "Превращение камня (Transmute Rock)",
-      "en": "Transmute Rock",
-      "level": 5
     }
   ]
 };
