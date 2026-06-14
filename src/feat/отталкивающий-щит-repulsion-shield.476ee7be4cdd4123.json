@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> щит (требуется настройка).</p>\n<p>Существо, держащее этот щит, получает бонус +1 к КД. Щит имеет 4 заряда. Когда вас атакует существо, находящееся в пределах 5 футов, пока вы держите щит, вы можете реакцией потратить 1 заряд, чтобы оттолкнуть это существо на расстояние до 15 футов. Щит восстанавливает 1d4 потраченных зарядов на рассвете.</p>",
       "chat": ""
     },
+    "identifier": "inf-repulsion-shield",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,33 +20,140 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "7fa122198f8d43ac": {
+        "_id": "7fa122198f8d43ac",
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": true
+        }
+      }
     },
     "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "spent": 0,
+      "max": "4",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d4"
+        }
+      ]
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "e717f603be649fd8",
+      "name": "Отталкивающий щит",
+      "img": "icons/equipment/shield/round-wooden-boss-steel-brown.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "transfer": true,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "flags": {},
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "coreVersion": "13.0.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "artificerru00000",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    }
+  ],
   "folder": "e8b8962cd123947e",
   "sort": 0,
   "ownership": {

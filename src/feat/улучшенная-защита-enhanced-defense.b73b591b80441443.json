@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> доспех или щит.</p>\n<p>Носящий доспех или щит получает бонус +1 к КД, пока он надет (или удерживается). Бонус увеличивается до +2, когда вы достигаете 10-го уровня изобретателя.</p>",
       "chat": ""
     },
+    "identifier": "inf-enhanced-defense",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,33 +20,57 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "992fda5fc0241900",
+      "name": "Улучшенная защита",
+      "img": "icons/equipment/shield/heater-steel-worn-blue.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "+1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "transfer": true,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "flags": {},
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "coreVersion": "13.0.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "artificerru00000",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    }
+  ],
   "folder": "e8b8962cd123947e",
   "sort": 0,
   "ownership": {

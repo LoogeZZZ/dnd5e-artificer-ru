@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> пара обуви (требуется настройка).</p>\n<p>Пока вы носите эту обувь, вы можете телепортироваться на расстояние до 15 футов бонусным действием в незанятое пространство, которое вы видите. Вы должны были побывать на этом месте ранее в этот ход. Например, вы можете телепортироваться обратно туда, откуда начали движение.</p>",
       "chat": ""
     },
+    "identifier": "inf-boots-of-winding-path",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,30 +20,78 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "b52af520ae0eaa9d": {
+        "_id": "b52af520ae0eaa9d",
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "15",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": true
+        }
+      }
     },
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

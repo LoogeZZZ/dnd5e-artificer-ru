@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> кольцо (требуется настройка).</p>\n<p>Пока вы носите это кольцо, оно накапливает остаточную магию, когда вы накладываете заклинания изобретателя. Кольцо имеет 6 зарядов и восстанавливает 1d6 потраченных зарядов на рассвете.</p>\n<p>Действием вы можете потратить заряды кольца, чтобы вернуть себе ячейку заклинания: 1 заряд за ячейку 1-го уровня или 2 заряда за ячейку 2-го уровня. Возвращённая ячейка не может быть выше 2-го уровня.</p>",
       "chat": ""
     },
+    "identifier": "inf-ring-of-spell-restoring",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,30 +20,93 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "5487796bacdded1e": {
+        "_id": "5487796bacdded1e",
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": true
+        }
+      }
     },
     "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "spent": 0,
+      "max": "6",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d6"
+        }
+      ]
     }
   },
   "effects": [],

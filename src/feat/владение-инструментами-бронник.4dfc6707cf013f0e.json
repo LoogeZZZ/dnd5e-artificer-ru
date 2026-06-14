@@ -9,6 +9,7 @@
       "value": "<p>Когда вы выбираете этот подкласс на 3-м уровне, вы получаете владение тяжёлыми доспехами и кузнечными инструментами. Если вы уже владеете кузнечными инструментами, вы получаете владение одним другим типом инструментов ремесленника по вашему выбору.</p>",
       "chat": ""
     },
+    "identifier": "armr-tools",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,30 +20,11 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

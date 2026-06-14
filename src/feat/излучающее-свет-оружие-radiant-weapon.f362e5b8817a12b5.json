@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> оружие (требуется настройка).</p>\n<p>Это магическое оружие даёт бонус +1 к броскам атаки и урона. Пока вы держите оружие, вы можете действием заставить его испускать или прекращать испускать яркий свет в радиусе 30 футов и тусклый свет ещё в пределах 30 футов.</p>\n<p>Оружие имеет 4 заряда. Когда существо атакует вас, пока вы держите оружие, вы можете реакцией потратить 1 заряд, чтобы это существо стало ослеплённым до конца своего следующего хода, если не преуспеет в спасброске Телосложения (Сл равна Сл ваших заклинаний). Оружие восстанавливает все заряды на рассвете.</p>",
       "chat": ""
     },
+    "identifier": "inf-radiant-weapon",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,33 +20,165 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "a63c9886ad32e4f9": {
+        "_id": "a63c9886ad32e4f9",
+        "type": "save",
+        "sort": 0,
+        "activation": {
+          "type": "reaction",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": [
+            "con"
+          ],
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
     },
     "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "spent": 0,
+      "max": "4",
+      "recovery": [
+        {
+          "period": "dawn",
+          "type": "formula",
+          "formula": "1d4"
+        }
+      ]
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "20465a46c3db8d45",
+      "name": "Излучающее свет оружие",
+      "img": "icons/weapons/swords/sword-runed-gold.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.attack",
+          "mode": 2,
+          "value": "+1",
+          "priority": null
+        },
+        {
+          "key": "system.bonuses.rwak.attack",
+          "mode": 2,
+          "value": "+1",
+          "priority": null
+        },
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "+1",
+          "priority": null
+        },
+        {
+          "key": "system.bonuses.rwak.damage",
+          "mode": 2,
+          "value": "+1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "transfer": true,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "flags": {},
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "coreVersion": "13.0.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "artificerru00000",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    }
+  ],
   "folder": "e8b8962cd123947e",
   "sort": 0,
   "ownership": {

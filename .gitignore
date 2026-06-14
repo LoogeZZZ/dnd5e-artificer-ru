@@ -4,3 +4,9 @@ node_modules/
 packs/**/LOCK
 packs/**/LOG
 packs/**/LOG.old
+
+# Build/test scratch (не часть модуля)
+.dnd5e-src/
+.mech-assembled.json
+repro*.mjs
+repro*.png

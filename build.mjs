@@ -8,6 +8,7 @@ import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { ClassicLevel } from "classic-level";
 import { CLASS_FEATURES, INFUSIONS, SUBCLASSES } from "./content.mjs";
+import { MECH } from "./mech.mjs";
 
 const ROOT = dirname(fileURLToPath(import.meta.url));
 const MODULE = "dnd5e-artificer-ru";
@@ -55,9 +56,129 @@ function folderDoc(f, sort) {
   };
 }
 
+// ---------- Активности / эффекты / заряды (схема dnd5e 5.x) ----------
+const AE_MODE = { custom: 0, multiply: 1, add: 2, downgrade: 3, upgrade: 4, override: 5 };
+const identSlug = (s) => (s || "").toLowerCase().replace(/[^a-z0-9_-]+/g, "-").replace(/^-+|-+$/g, "") || "feat";
+
+// system.uses (v5): { spent, max, recovery:[{period,type,formula?}] }
+function mkUses(u) {
+  if (!u) return { spent: 0, max: "", recovery: [] };
+  const rec = (u.recovery == null ? [] : Array.isArray(u.recovery) ? u.recovery : [u.recovery]).map((r) =>
+    typeof r === "string"
+      ? { period: r, type: "recoverAll" }
+      : { period: r.period, type: r.type || "recoverAll", ...(r.formula ? { formula: r.formula } : {}) });
+  return { spent: 0, max: u.max ?? "", recovery: rec };
+}
+
+const SCALAR_ACT = new Set(["action", "bonus", "minute", "hour", "day"]);
+const mkActivation = (a = "action") => ({ type: a, value: SCALAR_ACT.has(a) ? 1 : null, condition: "", override: false });
+
+function mkConsumption(consume) {
+  const targets = [];
+  if (consume === true || consume === "itemUses")
+    targets.push({ type: "itemUses", target: "", value: "1", scaling: { mode: "", formula: "" } });
+  else if (consume === "activityUses")
+    targets.push({ type: "activityUses", target: "", value: "1", scaling: { mode: "", formula: "" } });
+  return { targets, scaling: { allowed: false, max: "" }, spellSlot: true };
+}
+
+function mkRange(r) {
+  if (!r || r === "self") return { units: "self", special: "", override: false };
+  if (r === "touch") return { units: "touch", special: "", override: false };
+  return { value: String(r.value ?? ""), units: r.units ?? "ft", special: "", override: false };
+}
+
+function mkTarget(t) {
+  const template = { count: "", contiguous: false, type: "", size: "", width: "", height: "", units: "ft" };
+  let affects = { count: "", type: "", choice: false, special: "" };
+  if (t === "self") affects.type = "self";
+  else if (t === "creature") affects = { count: "1", type: "creature", choice: false, special: "" };
+  else if (t && typeof t === "object") {
+    if (t.template) Object.assign(template, t.template);
+    affects = { count: String(t.count ?? ""), type: t.affects ?? "creature", choice: false, special: "" };
+  }
+  return { template, affects, prompt: true, override: false };
+}
+
+// DamageData-часть: {n,d} для кубов или {formula} для произвольной формулы
+function dmgPart(p = {}) {
+  const custom = p.formula ? { enabled: true, formula: p.formula } : { enabled: false, formula: "" };
+  return {
+    number: p.formula ? null : (p.n ?? null),
+    denomination: p.formula ? null : (p.d ?? null),
+    bonus: p.bonus || "",
+    types: p.types || [],
+    custom,
+    scaling: { mode: p.scale || "", number: p.scaleN ?? null, formula: p.scaleFormula || "" }
+  };
+}
+
+function mkActivity(featKey, idx, a) {
+  const _id = id("ACT:" + featKey + ":" + idx);
+  const base = {
+    _id, type: a.kind, sort: a.sort || 0,
+    ...(a.name ? { name: a.name } : {}),
+    activation: mkActivation(a.activation),
+    consumption: mkConsumption(a.consume),
+    description: { chatFlavor: "" },
+    duration: { concentration: !!a.concentration, value: String(a.durationValue ?? ""), units: a.durationUnits ?? "inst", special: "", override: false },
+    effects: (a.effects || []).map((eid) => (a.kind === "save" ? { _id: eid, onSave: false } : { _id: eid })),
+    range: mkRange(a.range),
+    target: mkTarget(a.target),
+    uses: mkUses(a.uses)
+  };
+  if (a.kind === "utility") {
+    base.roll = { formula: a.roll || "", name: a.rollName || "", prompt: !!a.rollPrompt, visible: !!a.rollVisible };
+  } else if (a.kind === "save") {
+    base.damage = { onSave: a.onSave || "none", parts: (a.damage || []).map(dmgPart) };
+    base.save = { ability: Array.isArray(a.ability) ? a.ability : [a.ability || "int"], dc: { calculation: a.dc || "spellcasting", formula: a.dcFormula || "" } };
+  } else if (a.kind === "attack") {
+    base.attack = { ability: a.attackAbility || "", bonus: a.attackBonus || "", critical: { threshold: null }, flat: false, type: { value: a.attackType || "melee", classification: a.attackClass || "weapon" } };
+    base.damage = { critical: { bonus: "" }, includeBase: !!a.includeBase, parts: (a.damage || []).map(dmgPart) };
+  } else if (a.kind === "damage") {
+    base.damage = { critical: { allow: false, bonus: "" }, parts: (a.damage || []).map(dmgPart) };
+  } else if (a.kind === "heal") {
+    base.healing = dmgPart(a.healing || {});
+  } else if (a.kind === "summon") {
+    base.bonuses = { ac: a.bonuses?.ac || "", hd: a.bonuses?.hd || "", hp: a.bonuses?.hp || "", attackDamage: a.bonuses?.attackDamage || "", saveDamage: a.bonuses?.saveDamage || "", healing: a.bonuses?.healing || "" };
+    base.creatureSizes = a.creatureSizes || [];
+    base.creatureTypes = a.creatureTypes || [];
+    base.match = { ability: a.match?.ability || "", attacks: !!(a.match && a.match.attacks), proficiency: !!(a.match && a.match.proficiency), saves: !!(a.match && a.match.saves) };
+    base.profiles = (a.profiles || []).map((p, i) => ({ _id: id("SUMP:" + featKey + ":" + idx + ":" + i), count: String(p.count ?? ""), cr: String(p.cr ?? ""), level: { min: p.levelMin ?? null, max: p.levelMax ?? null }, name: p.name ?? "", types: p.types ?? [], uuid: p.uuid }));
+    base.summon = { prompt: a.summonPrompt !== false, mode: a.summonMode || "", identifier: a.identifier || "" };
+  }
+  return [_id, base];
+}
+
+function mkEffect(featKey, idx, e) {
+  const _id = id("AE:" + featKey + ":" + idx);
+  return {
+    _id,
+    name: e.name,
+    img: e.img || "icons/magic/symbols/runes-triangle-orange.webp",
+    type: e.enchantment ? "enchantment" : "base",
+    system: {},
+    changes: (e.changes || []).map((c) => ({ key: c[0], mode: AE_MODE[c[1]] ?? 2, value: String(c[2]), priority: null })),
+    disabled: e.enchantment ? true : !!e.disabled,
+    transfer: e.enchantment ? false : (e.transfer ?? true),
+    origin: null,
+    duration: { startTime: null, seconds: null, combat: null, rounds: null, turns: null, startRound: null, startTurn: null },
+    description: e.description || "",
+    statuses: e.statuses || [],
+    tint: "#ffffff",
+    flags: e.flags || {},
+    sort: 0,
+    _stats: STATS()
+  };
+}
+
 // ---------- Базовый предмет «умение» (feat) ----------
 function featDoc(spec, { folderKey, subtype }) {
   const _id = id("FEAT:" + spec.key);
+  const m = spec.mech || MECH[spec.mechKey ?? spec.key] || {};
+  const activities = {};
+  (m.activities || []).forEach((a, i) => { const [aid, obj] = mkActivity(spec.key, i, a); activities[aid] = obj; });
+  const effects = (m.effects || []).map((e, i) => mkEffect(spec.key, i, e));
   return {
     _id,
     _key: `!items!${_id}`,
@@ -66,17 +187,15 @@ function featDoc(spec, { folderKey, subtype }) {
     img: spec.img || "icons/sundries/scrolls/scroll-runed-brown.webp",
     system: {
       description: { value: spec.html, chat: "" },
+      identifier: spec.identifier || identSlug(spec.key),
       source: { custom: "Tasha's Cauldron of Everything", book: "TCoE" },
       requirements: spec.requirements ?? "Изобретатель",
-      type: { value: subtype, subtype: "" },
-      properties: [],
-      activation: { type: "", value: null, condition: "" },
-      duration: { value: "", units: "" },
-      target: { value: null, units: "", type: "" },
-      range: { value: null, long: null, units: "" },
-      uses: { value: null, max: "", per: null, recovery: "" }
+      type: { value: subtype, subtype: spec.subtype || "" },
+      properties: m.properties || [],
+      activities,
+      uses: mkUses(m.uses)
     },
-    effects: [],
+    effects,
     folder: folderId(folderKey),
     sort: 0,
     ownership: { default: 0 },
@@ -87,11 +206,10 @@ function featDoc(spec, { folderKey, subtype }) {
 
 // ---------- Инфузия (feat) ----------
 function infusionDoc(inf) {
-  const doc = featDoc(
-    { key: "INF:" + inf.key, name: `${inf.name} (${inf.en})`, img: "icons/magic/symbols/runes-triangle-orange.webp", html: inf.html, requirements: "Инфузия изобретателя" },
+  return featDoc(
+    { key: "INF:" + inf.key, mechKey: inf.key, identifier: identSlug(inf.key), name: `${inf.name} (${inf.en})`, img: inf.img || "icons/magic/symbols/runes-triangle-orange.webp", html: inf.html, requirements: "Инфузия изобретателя" },
     { folderKey: "folder-infusion", subtype: "class" }
   );
-  return doc;
 }
 
 // ---------- Advancement-конструкторы ----------
@@ -329,7 +447,19 @@ rmSync(PACK_DIR, { recursive: true, force: true });
 mkdirSync(PACK_DIR, { recursive: true });
 const db = new ClassicLevel(PACK_DIR, { keyEncoding: "utf8", valueEncoding: "json" });
 const batch = db.batch();
-for (const d of docs) batch.put(d._key, d);
+for (const d of docs) {
+  // В LevelDB-паке встроенные ActiveEffect хранятся ОТДЕЛЬНЫМИ строками
+  // (!items.effects!<itemId>.<effId>), а в самом предмете effects[] = массив id-строк.
+  if (d._key.startsWith("!items!") && Array.isArray(d.effects) && d.effects.length) {
+    const itemRow = { ...d, effects: d.effects.map((e) => e._id) };
+    batch.put(d._key, itemRow);
+    for (const eff of d.effects) {
+      batch.put(`!items.effects!${d._id}.${eff._id}`, { ...eff, _key: `!items.effects!${d._id}.${eff._id}` });
+    }
+  } else {
+    batch.put(d._key, d);
+  }
+}
 await batch.write();
 await db.close();
 

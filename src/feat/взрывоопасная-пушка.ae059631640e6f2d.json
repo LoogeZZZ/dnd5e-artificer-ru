@@ -9,6 +9,7 @@
       "value": "<p>Урон, наносимый вашей мистической пушкой, увеличивается на 1d8.</p>\n<p>Кроме того, вы можете действием приказать любой из ваших пушек в пределах 60 футов взорваться. Пушка немедленно уничтожается, а каждое существо в пределах 20 футов от неё должно преуспеть в спасброске Ловкости (Сл равна Сл ваших заклинаний), иначе получает 3d8 силового урона (при провале) или половину при успехе.</p>",
       "chat": ""
     },
+    "identifier": "arti-explosive",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -18,31 +19,14 @@
       "value": "subclass",
       "subtype": ""
     },
-    "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

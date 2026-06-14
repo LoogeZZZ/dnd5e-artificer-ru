@@ -9,6 +9,7 @@
       "value": "<p>После каждого продолжительного отдыха вы можете магически создать один экспериментальный эликсир в склянке, имея под рукой алхимические инструменты. Бросьте по таблице, чтобы определить эффект эликсира (либо выберите эффект). Создание эликсира не требует действия, а склянка пуста, пока вы её не наполните.</p>\n<p>Существо может бонусным действием выпить эликсир или передать его другому существу, до которого может дотянуться. Эффект зависит от типа эликсира (исцеление, стойкость, отвага, прыгучесть, прыткость, прозрение и др.). Любой эликсир теряет силу, если его не выпить до вашего следующего продолжительного отдыха.</p>\n<p>Начиная с 5-го уровня, вы можете создавать дополнительные эликсиры за одну ячейку заклинания (по одному за каждый уровень ячейки), создавая их в момент использования ячейки. Эликсиры, созданные таким образом, должны быть выпиты в течение 1 часа.</p>",
       "chat": ""
     },
+    "identifier": "alch-elixir",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,30 +20,168 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "b30ce9a7ff96344c": {
+        "_id": "b30ce9a7ff96344c",
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "1d6",
+          "name": "Эффект эликсира",
+          "prompt": false,
+          "visible": true
+        }
+      },
+      "1c54115cf30f12ab": {
+        "_id": "1c54115cf30f12ab",
+        "type": "heal",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "touch",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "healing": {
+          "number": 2,
+          "denomination": 4,
+          "bonus": "",
+          "types": [
+            "healing"
+          ],
+          "custom": {
+            "enabled": false,
+            "formula": ""
+          },
+          "scaling": {
+            "mode": "",
+            "number": null,
+            "formula": ""
+          }
+        }
+      }
     },
     "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "spent": 0,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
     }
   },
   "effects": [],

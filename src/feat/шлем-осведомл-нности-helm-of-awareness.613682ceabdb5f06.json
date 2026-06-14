@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> шлем (требуется настройка).</p>\n<p>Пока вы носите этот шлем, вы получаете преимущество на броски инициативы. Кроме того, вас нельзя застать врасплох, пока вы в сознании.</p>",
       "chat": ""
     },
+    "identifier": "inf-helm-of-awareness",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,33 +20,57 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "1215e71372c6685f",
+      "name": "Шлем осведомлённости",
+      "img": "icons/magic/perception/eye-ringed-glow-angry-small-red.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "flags.dnd5e.initiativeAdv",
+          "mode": 5,
+          "value": "1",
+          "priority": null
+        }
+      ],
+      "disabled": false,
+      "transfer": true,
+      "origin": null,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "combat": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null
+      },
+      "description": "",
+      "statuses": [],
+      "tint": "#ffffff",
+      "flags": {},
+      "sort": 0,
+      "_stats": {
+        "systemId": "dnd5e",
+        "systemVersion": "4.0.0",
+        "coreVersion": "13.0.0",
+        "createdTime": 0,
+        "modifiedTime": 0,
+        "lastModifiedBy": "artificerru00000",
+        "compendiumSource": null,
+        "duplicateSource": null
+      }
+    }
+  ],
   "folder": "e8b8962cd123947e",
   "sort": 0,
   "ownership": {
