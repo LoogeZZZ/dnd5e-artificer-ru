@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> драгоценный камень или хрусталь стоимостью не менее 100 зм (требуется настройка).</p>\n<p>Вы создаёте магического слугу-гомункула, который служит вам. Он крошечный конструкт со своими характеристиками. Его хиты равны 1 + ваш модификатор Интеллекта + ваш уровень изобретателя. В бою гомункул действует в ваш ход, и вы можете бонусным действием мысленно командовать им (перемещение и действие).</p>\n<p>Гомункул может совершать атаку «Сокрушительный разряд» с бонусом, равным вашему бонусу атаки заклинанием, нанося силовой урон 1d4 + ваш модификатор Интеллекта. Реакцией он может даровать вам преимущество на бросок атаки по существу в пределах 5 футов от него. Если гомункул погибает, вы можете восстановить его, потратив час и исходный камень.</p>",
       "chat": ""
     },
+    "identifier": "inf-homunculus-servant",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,30 +20,77 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "3a077adf000c221a": {
+        "_id": "3a077adf000c221a",
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": true
+        }
+      }
     },
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

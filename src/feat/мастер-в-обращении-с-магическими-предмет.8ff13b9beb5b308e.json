@@ -9,6 +9,7 @@
       "value": "<p>Вы можете носить и поддерживать огромное количество магической силы.</p>\n<p>Вы можете быть настроены одновременно на шесть магических предметов.</p>",
       "chat": ""
     },
+    "identifier": "feat-magic-item-master",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -18,31 +19,14 @@
       "value": "class",
       "subtype": ""
     },
-    "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

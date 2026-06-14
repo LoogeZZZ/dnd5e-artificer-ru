@@ -9,6 +9,7 @@
       "value": "<p><strong>Предмет:</strong> доспех (требуется настройка).</p>\n<p>Пока вы носите этот доспех, он обеспечивает следующие преимущества:</p>\n<ul>\n<li>доспех заменяет собой отсутствующие конечности — щупальца из силового поля держат предметы, открывают двери и так далее;</li>\n<li>вы можете надеть и снять доспех действием;</li>\n<li>доспех нельзя снять против вашей воли, пока вы живы и в сознании;</li>\n<li>доспех адаптируется под ваше тело, и вы можете спать в нём без негативных последствий.</li>\n</ul>",
       "chat": ""
     },
+    "identifier": "inf-animated-armor",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -18,31 +19,14 @@
       "value": "class",
       "subtype": ""
     },
-    "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

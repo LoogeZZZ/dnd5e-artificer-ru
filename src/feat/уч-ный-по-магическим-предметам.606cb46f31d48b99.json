@@ -9,6 +9,7 @@
       "value": "<p>Ваше мастерство в обращении с магическими предметами достигло новых высот.</p>\n<ul>\n<li>Вы можете быть настроены одновременно на пять магических предметов.</li>\n<li>Вы игнорируете все требования к классу, расе, уровню заклинателя и характеристикам при настройке на магический предмет или его использовании.</li>\n</ul>",
       "chat": ""
     },
+    "identifier": "feat-magic-item-savant",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -18,31 +19,14 @@
       "value": "class",
       "subtype": ""
     },
-    "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

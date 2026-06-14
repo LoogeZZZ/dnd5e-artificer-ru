@@ -2,7 +2,7 @@
   "id": "dnd5e-artificer-ru",
   "title": "Изобретатель (Artificer) — RU",
   "description": "Класс «Изобретатель» (Artificer) из Tasha's Cauldron of Everything на русском языке: класс 1–20 ур., все классовые умения, 16 инфузий и 4 подкласса (Алхимик, Артиллерист, Боевой кузнец, Бронник). Готовый компендиум для системы D&D 5e в Foundry VTT v13.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "Изобретатель RU",
@@ -23,6 +23,13 @@
           "minimum": "4.0.0"
         }
       }
+    ],
+    "recommends": [
+      {
+        "id": "lomeo-dnd5e-phantom",
+        "type": "module",
+        "reason": "Русские названия заклинаний в списке заклинаний изобретателя (ссылки ведут на пак заклинаний PHantom)"
+      }
     ]
   },
   "packs": [
@@ -38,6 +45,17 @@
         "ASSISTANT": "OWNER"
       },
       "flags": {}
+    },
+    {
+      "name": "izobretatel-zaklinaniya",
+      "label": "Заклинания изобретателя",
+      "path": "packs/izobretatel-zaklinaniya",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "flags": {}
     }
   ],
   "packFolders": [
@@ -45,7 +63,7 @@
       "name": "Изобретатель (Artificer)",
       "sorting": "m",
       "color": "#7a3b9e",
-      "packs": ["izobretatel"]
+      "packs": ["izobretatel", "izobretatel-zaklinaniya"]
     }
   ],
   "languages": [
@@ -55,6 +73,13 @@
       "path": "lang/ru.json"
     }
   ],
+  "flags": {
+    "dnd5e": {
+      "spellLists": [
+        "Compendium.dnd5e-artificer-ru.izobretatel-zaklinaniya.JournalEntry.e5efce0a38f5e292.JournalEntryPage.ba6736e59710162a"
+      ]
+    }
+  },
   "url": "https://github.com/LoogeZZZ/dnd5e-artificer-ru",
   "manifest": "https://raw.githubusercontent.com/LoogeZZZ/dnd5e-artificer-ru/main/module.json",
   "download": "https://github.com/LoogeZZZ/dnd5e-artificer-ru/archive/refs/heads/main.zip"

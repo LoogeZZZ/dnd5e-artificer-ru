@@ -9,6 +9,7 @@
       "value": "<p>Ваш опыт с алхимическими реагентами усиливает некоторые из ваших заклинаний.</p>\n<p>Когда вы держите алхимические инструменты и накладываете заклинание изобретателя, восстанавливающее хиты или наносящее урон кислотой, огнём, некротической энергией или ядом, вы добавляете ваш модификатор Интеллекта (минимум +1) к одному броску исцеления или урона этого заклинания.</p>",
       "chat": ""
     },
+    "identifier": "alch-savant",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -18,31 +19,14 @@
       "value": "subclass",
       "subtype": ""
     },
-    "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

@@ -9,6 +9,7 @@
       "value": "<p>Вы научились усиливать мистический доспех инфузиями.</p>\n<p>Вы можете распределить инфузии между частями мистического доспеха (доспех, оружие, щит, обувь и т. п.), как если бы это были отдельные предметы. Максимальное число одновременно влитых предметов увеличивается на 2, но эти дополнительные инфузии должны находиться на частях мистического доспеха.</p>",
       "chat": ""
     },
+    "identifier": "armr-modifications",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -18,31 +19,14 @@
       "value": "subclass",
       "subtype": ""
     },
-    "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
+    "properties": [
+      "trait"
+    ],
+    "activities": {},
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],

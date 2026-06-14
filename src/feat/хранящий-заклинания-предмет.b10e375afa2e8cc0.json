@@ -9,6 +9,7 @@
       "value": "<p>Вы научились запасать заклинание в предмете.</p>\n<p>В конце продолжительного отдыха вы можете коснуться оружия или предмета, который можно использовать в качестве фокусировки для заклинаний, и сохранить в нём одно заклинание из списка изобретателя 1-го или 2-го уровня с временем накладывания «1 действие» (на момент инфузии заклинание должно быть вам доступно для подготовки).</p>\n<p>Существо, держащее предмет, может действием накладывать сохранённое заклинание, используя ваш модификатор базовой характеристики заклинаний. Заклинание использует характеристики заклинателя-изобретателя и не требует ни компонентов, ни ячеек.</p>\n<p>Заклинание можно наложить количество раз, равное вашему удвоенному модификатору Интеллекта (минимум дважды), после чего предмет утрачивает заряд. Вы можете повторно сохранить заклинание в том же или другом предмете после следующего продолжительного отдыха.</p>",
       "chat": ""
     },
+    "identifier": "feat-spell-storing-item",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,30 +20,92 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "fd1fdd67874fdade": {
+        "_id": "fd1fdd67874fdade",
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [
+            {
+              "type": "itemUses",
+              "target": "",
+              "value": "1",
+              "scaling": {
+                "mode": "",
+                "formula": ""
+              }
+            }
+          ],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": true
+        }
+      }
     },
     "uses": {
-      "value": null,
-      "max": "",
-      "per": null,
-      "recovery": ""
+      "spent": 0,
+      "max": "2 * @abilities.int.mod",
+      "recovery": [
+        {
+          "period": "lr",
+          "type": "recoverAll"
+        }
+      ]
     }
   },
   "effects": [],

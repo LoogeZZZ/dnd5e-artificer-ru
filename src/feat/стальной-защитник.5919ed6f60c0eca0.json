@@ -9,6 +9,7 @@
       "value": "<p>Ваши знания о магии конструктов позволяют вам создать верного защитника. Он Среднего размера, имеет собственные характеристики и подчиняется вашим командам. В бою защитник действует в ваш ход; вы можете бонусным действием мысленно командовать им. Без команды он защищается, оставаясь рядом с вами.</p>\n<p>Хиты защитника равны 2 + ваш модификатор Интеллекта + ваш пятикратный уровень изобретателя. Он может совершать атаку «Сокрушающий удар» (бонус атаки = бонус мастерства + модификатор Интеллекта, урон 1d8 + модификатор мастерства силовым уроном), а реакцией «Отражающая атака» накладывать помеху на атаку по другому существу в пределах 5 футов от себя. Если защитник погибает, вы можете воскресить его за 1 час работы с кузнечными инструментами.</p>",
       "chat": ""
     },
+    "identifier": "smith-defender",
     "source": {
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
@@ -19,30 +20,77 @@
       "subtype": ""
     },
     "properties": [],
-    "activation": {
-      "type": "",
-      "value": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": "",
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
+    "activities": {
+      "9b8a91c9719745ee": {
+        "_id": "9b8a91c9719745ee",
+        "type": "utility",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "concentration": false,
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "self",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "roll": {
+          "formula": "",
+          "name": "",
+          "prompt": false,
+          "visible": false
+        }
+      }
     },
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": null,
-      "recovery": ""
+      "recovery": []
     }
   },
   "effects": [],
