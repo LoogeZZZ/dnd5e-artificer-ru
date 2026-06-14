@@ -275,6 +275,29 @@ const advItemGrant = (key, level, uuids, title) => ({
   icon: ""
 });
 
+// Выбор заговоров из списка заклинаний изобретателя (2 на 1 ур., +1 на 6, +1 на 10).
+const advCantripChoice = () => ({
+  _id: id("ADV:cantrips"),
+  type: "ItemChoice",
+  configuration: {
+    hint: "Выберите заговоры из списка заклинаний изобретателя.",
+    choices: {
+      1: { count: 2, replacement: false },
+      6: { count: 1, replacement: false },
+      10: { count: 1, replacement: false }
+    },
+    allowDrops: true,
+    type: "spell",
+    pool: [],
+    restriction: { type: "", subtype: "", level: "0", list: ["class:artificer"] },
+    spell: { ability: ["int"], method: "", prepared: 0, uses: { max: "", per: "", requireSlot: false } }
+  },
+  value: {},
+  level: 0,
+  title: "Заговоры изобретателя",
+  icon: ""
+});
+
 const advInfusionChoice = (poolUuids) => ({
   _id: id("ADV:infchoice"),
   type: "ItemChoice",
@@ -327,6 +350,7 @@ function classDoc() {
     }),
     advScale("infusions-known", "Известные инфузии", { 2: { value: 4 }, 6: { value: 6 }, 10: { value: 8 }, 14: { value: 10 }, 18: { value: 12 } }),
     advScale("infused-items", "Влитые предметы", { 2: { value: 2 }, 6: { value: 3 }, 10: { value: 4 }, 14: { value: 5 }, 18: { value: 6 } }),
+    advCantripChoice(),
     advInfusionChoice(infPool),
     advSubclass(),
     ...[4, 8, 12, 16, 19].map(advASI),
