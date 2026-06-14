@@ -73,7 +73,7 @@
           "grants": [
             "armor:lgt",
             "armor:med",
-            "armor:shield",
+            "armor:shl",
             "weapon:sim",
             "tool:thief",
             "tool:tinker"
@@ -525,7 +525,7 @@
     "coreVersion": "13.0.0",
     "createdTime": 0,
     "modifiedTime": 0,
-    "lastModifiedBy": "artificerrubuilder",
+    "lastModifiedBy": "artificerru00000",
     "compendiumSource": null,
     "duplicateSource": null
   }
