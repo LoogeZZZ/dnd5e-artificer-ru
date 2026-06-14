@@ -1,7 +1,6 @@
 // Список заклинаний класса «Изобретатель» (Tasha's Cauldron of Everything).
-// linked — UUID заклинаний, найденных в SRD-паках системы dnd5e (spells/spells24).
-// unlinked — заклинания Изобретателя, отсутствующие в SRD (показываются в списке без ссылки).
-// Сгенерировано сопоставлением имён против системных паков; см. spell-match при пересборке.
+// linked — UUID заклинаний из SRD-паков dnd5e (имена локализуются переводом Babele/PHantom).
+// unlinked — заклинания, отсутствующие в SRD; имя на русском + (English) для поиска при ручном добавлении.
 
 export const ARTIFICER_SPELLS = {
   linked: [
@@ -76,119 +75,148 @@ export const ARTIFICER_SPELLS = {
   ],
   unlinked: [
     {
-      "name": "Booming Blade",
+      "name": "Гулкий клинок (Booming Blade)",
+      "en": "Booming Blade",
       "level": 0
     },
     {
-      "name": "Create Bonfire",
+      "name": "Сотворение костра (Create Bonfire)",
+      "en": "Create Bonfire",
       "level": 0
     },
     {
-      "name": "Frostbite",
+      "name": "Обморожение (Frostbite)",
+      "en": "Frostbite",
       "level": 0
     },
     {
-      "name": "Green-Flame Blade",
+      "name": "Клинок зелёного пламени (Green-Flame Blade)",
+      "en": "Green-Flame Blade",
       "level": 0
     },
     {
-      "name": "Lightning Lure",
+      "name": "Манок молнии (Lightning Lure)",
+      "en": "Lightning Lure",
       "level": 0
     },
     {
-      "name": "Magic Stone",
+      "name": "Волшебный камень (Magic Stone)",
+      "en": "Magic Stone",
       "level": 0
     },
     {
-      "name": "Sword Burst",
+      "name": "Взрыв клинков (Sword Burst)",
+      "en": "Sword Burst",
       "level": 0
     },
     {
-      "name": "Thorn Whip",
+      "name": "Терновый кнут (Thorn Whip)",
+      "en": "Thorn Whip",
       "level": 0
     },
     {
-      "name": "Thunderclap",
+      "name": "Раскат грома (Thunderclap)",
+      "en": "Thunderclap",
       "level": 0
     },
     {
-      "name": "Absorb Elements",
+      "name": "Поглощение стихий (Absorb Elements)",
+      "en": "Absorb Elements",
       "level": 1
     },
     {
-      "name": "Catapult",
+      "name": "Катапульта (Catapult)",
+      "en": "Catapult",
       "level": 1
     },
     {
-      "name": "Snare",
+      "name": "Силок (Snare)",
+      "en": "Snare",
       "level": 1
     },
     {
-      "name": "Tasha's Caustic Brew",
+      "name": "Едкое варево Таши (Tasha's Caustic Brew)",
+      "en": "Tasha's Caustic Brew",
       "level": 1
     },
     {
-      "name": "Pyrotechnics",
+      "name": "Пиротехника (Pyrotechnics)",
+      "en": "Pyrotechnics",
       "level": 2
     },
     {
-      "name": "Skywrite",
+      "name": "Небесное послание (Skywrite)",
+      "en": "Skywrite",
       "level": 2
     },
     {
-      "name": "Catnap",
+      "name": "Кошачий сон (Catnap)",
+      "en": "Catnap",
       "level": 3
     },
     {
-      "name": "Elemental Weapon",
+      "name": "Стихийное оружие (Elemental Weapon)",
+      "en": "Elemental Weapon",
       "level": 3
     },
     {
-      "name": "Flame Arrows",
+      "name": "Огненные стрелы (Flame Arrows)",
+      "en": "Flame Arrows",
       "level": 3
     },
     {
-      "name": "Intellect Fortress",
+      "name": "Крепость интеллекта (Intellect Fortress)",
+      "en": "Intellect Fortress",
       "level": 3
     },
     {
-      "name": "Tiny Servant",
+      "name": "Крошечный слуга (Tiny Servant)",
+      "en": "Tiny Servant",
       "level": 3
     },
     {
-      "name": "Elemental Bane",
+      "name": "Стихийная погибель (Elemental Bane)",
+      "en": "Elemental Bane",
       "level": 4
     },
     {
-      "name": "Leomund's Secret Chest",
+      "name": "Тайный сундук Леомунда (Leomund's Secret Chest)",
+      "en": "Leomund's Secret Chest",
       "level": 4
     },
     {
-      "name": "Mordenkainen's Faithful Hound",
+      "name": "Верный пёс Морденкайнена (Mordenkainen's Faithful Hound)",
+      "en": "Mordenkainen's Faithful Hound",
       "level": 4
     },
     {
-      "name": "Mordenkainen's Private Sanctum",
+      "name": "Уединённое убежище Морденкайнена (Mordenkainen's Private Sanctum)",
+      "en": "Mordenkainen's Private Sanctum",
       "level": 4
     },
     {
-      "name": "Otiluke's Resilient Sphere",
+      "name": "Упругая сфера Отилюка (Otiluke's Resilient Sphere)",
+      "en": "Otiluke's Resilient Sphere",
       "level": 4
     },
     {
-      "name": "Summon Construct",
+      "name": "Призыв конструкта (Summon Construct)",
+      "en": "Summon Construct",
       "level": 4
     },
     {
-      "name": "Bigby's Hand",
+      "name": "Рука Бигби (Bigby's Hand)",
+      "en": "Bigby's Hand",
       "level": 5
     },
     {
-      "name": "Skill Empowerment",
+      "name": "Усиление навыка (Skill Empowerment)",
+      "en": "Skill Empowerment",
       "level": 5
     },
     {
-      "name": "Transmute Rock",
+      "name": "Превращение камня (Transmute Rock)",
+      "en": "Transmute Rock",
       "level": 5
     }
   ]

@@ -101,9 +101,9 @@
         ],
         "unlinkedSpells": [
           {
-            "_id": "e51980ce83599ef9",
+            "_id": "e1d7b2e01e15ed07",
             "identifier": "booming-blade",
-            "name": "Booming Blade",
+            "name": "Гулкий клинок (Booming Blade)",
             "system": {
               "level": 0,
               "school": ""
@@ -116,9 +116,9 @@
             }
           },
           {
-            "_id": "b394e8a44c1fa444",
+            "_id": "98a408f61e4f91bc",
             "identifier": "create-bonfire",
-            "name": "Create Bonfire",
+            "name": "Сотворение костра (Create Bonfire)",
             "system": {
               "level": 0,
               "school": ""
@@ -131,9 +131,9 @@
             }
           },
           {
-            "_id": "ff1c335f745ef460",
+            "_id": "3e286587676cbad9",
             "identifier": "frostbite",
-            "name": "Frostbite",
+            "name": "Обморожение (Frostbite)",
             "system": {
               "level": 0,
               "school": ""
@@ -146,9 +146,9 @@
             }
           },
           {
-            "_id": "c09f80d7b3fe49ac",
+            "_id": "ae43eac2cb9ccfa8",
             "identifier": "green-flame-blade",
-            "name": "Green-Flame Blade",
+            "name": "Клинок зелёного пламени (Green-Flame Blade)",
             "system": {
               "level": 0,
               "school": ""
@@ -161,9 +161,9 @@
             }
           },
           {
-            "_id": "055cfc9906fd6810",
+            "_id": "f7ebee3799053105",
             "identifier": "lightning-lure",
-            "name": "Lightning Lure",
+            "name": "Манок молнии (Lightning Lure)",
             "system": {
               "level": 0,
               "school": ""
@@ -176,9 +176,9 @@
             }
           },
           {
-            "_id": "b5a55585fc213895",
+            "_id": "0d32f6b678dcb2bf",
             "identifier": "magic-stone",
-            "name": "Magic Stone",
+            "name": "Волшебный камень (Magic Stone)",
             "system": {
               "level": 0,
               "school": ""
@@ -191,9 +191,9 @@
             }
           },
           {
-            "_id": "f3c0a4caa9592b75",
+            "_id": "0780e7651bb13f76",
             "identifier": "sword-burst",
-            "name": "Sword Burst",
+            "name": "Взрыв клинков (Sword Burst)",
             "system": {
               "level": 0,
               "school": ""
@@ -206,9 +206,9 @@
             }
           },
           {
-            "_id": "4819412209a5dca6",
+            "_id": "0a8dc4b57833f151",
             "identifier": "thorn-whip",
-            "name": "Thorn Whip",
+            "name": "Терновый кнут (Thorn Whip)",
             "system": {
               "level": 0,
               "school": ""
@@ -221,9 +221,9 @@
             }
           },
           {
-            "_id": "1f0a76087982e160",
+            "_id": "f2eca76fc13d82f9",
             "identifier": "thunderclap",
-            "name": "Thunderclap",
+            "name": "Раскат грома (Thunderclap)",
             "system": {
               "level": 0,
               "school": ""
@@ -236,9 +236,9 @@
             }
           },
           {
-            "_id": "b191d8e17d2a44e3",
+            "_id": "34b6b4f78ee36b2e",
             "identifier": "absorb-elements",
-            "name": "Absorb Elements",
+            "name": "Поглощение стихий (Absorb Elements)",
             "system": {
               "level": 1,
               "school": ""
@@ -251,9 +251,9 @@
             }
           },
           {
-            "_id": "a9e09283c98d4d39",
+            "_id": "15f149ef2eaec5b3",
             "identifier": "catapult",
-            "name": "Catapult",
+            "name": "Катапульта (Catapult)",
             "system": {
               "level": 1,
               "school": ""
@@ -266,9 +266,9 @@
             }
           },
           {
-            "_id": "020290da75a2ddb3",
+            "_id": "d480852931b7e3cd",
             "identifier": "snare",
-            "name": "Snare",
+            "name": "Силок (Snare)",
             "system": {
               "level": 1,
               "school": ""
@@ -281,9 +281,9 @@
             }
           },
           {
-            "_id": "538e74c8219f58e2",
+            "_id": "e4a07b31ac8df4c7",
             "identifier": "tasha-s-caustic-brew",
-            "name": "Tasha's Caustic Brew",
+            "name": "Едкое варево Таши (Tasha's Caustic Brew)",
             "system": {
               "level": 1,
               "school": ""
@@ -296,9 +296,9 @@
             }
           },
           {
-            "_id": "8e56b02c9e0488d3",
+            "_id": "421fa493354fabad",
             "identifier": "pyrotechnics",
-            "name": "Pyrotechnics",
+            "name": "Пиротехника (Pyrotechnics)",
             "system": {
               "level": 2,
               "school": ""
@@ -311,9 +311,9 @@
             }
           },
           {
-            "_id": "d267c596b13d9cd7",
+            "_id": "7d9903b422696806",
             "identifier": "skywrite",
-            "name": "Skywrite",
+            "name": "Небесное послание (Skywrite)",
             "system": {
               "level": 2,
               "school": ""
@@ -326,9 +326,9 @@
             }
           },
           {
-            "_id": "ec19d02635f70768",
+            "_id": "3564a8852e04a5ed",
             "identifier": "catnap",
-            "name": "Catnap",
+            "name": "Кошачий сон (Catnap)",
             "system": {
               "level": 3,
               "school": ""
@@ -341,9 +341,9 @@
             }
           },
           {
-            "_id": "de257b1ef92637a0",
+            "_id": "c8713f4ce15d2c54",
             "identifier": "elemental-weapon",
-            "name": "Elemental Weapon",
+            "name": "Стихийное оружие (Elemental Weapon)",
             "system": {
               "level": 3,
               "school": ""
@@ -356,9 +356,9 @@
             }
           },
           {
-            "_id": "501c348f3c0fdb02",
+            "_id": "dc63bfdcdb455063",
             "identifier": "flame-arrows",
-            "name": "Flame Arrows",
+            "name": "Огненные стрелы (Flame Arrows)",
             "system": {
               "level": 3,
               "school": ""
@@ -371,9 +371,9 @@
             }
           },
           {
-            "_id": "5781fb2da2f07bbd",
+            "_id": "b3157c737268bf3e",
             "identifier": "intellect-fortress",
-            "name": "Intellect Fortress",
+            "name": "Крепость интеллекта (Intellect Fortress)",
             "system": {
               "level": 3,
               "school": ""
@@ -386,9 +386,9 @@
             }
           },
           {
-            "_id": "508d30b43708e1b9",
+            "_id": "d5252aca654eb735",
             "identifier": "tiny-servant",
-            "name": "Tiny Servant",
+            "name": "Крошечный слуга (Tiny Servant)",
             "system": {
               "level": 3,
               "school": ""
@@ -401,9 +401,9 @@
             }
           },
           {
-            "_id": "8be6354ac249584c",
+            "_id": "a5e46e127e7ca860",
             "identifier": "elemental-bane",
-            "name": "Elemental Bane",
+            "name": "Стихийная погибель (Elemental Bane)",
             "system": {
               "level": 4,
               "school": ""
@@ -416,9 +416,9 @@
             }
           },
           {
-            "_id": "e4dc084697095b34",
+            "_id": "300bb6f5c11b7c3e",
             "identifier": "leomund-s-secret-chest",
-            "name": "Leomund's Secret Chest",
+            "name": "Тайный сундук Леомунда (Leomund's Secret Chest)",
             "system": {
               "level": 4,
               "school": ""
@@ -431,9 +431,9 @@
             }
           },
           {
-            "_id": "c9ede66113ae2982",
+            "_id": "6fd8718cb8b75917",
             "identifier": "mordenkainen-s-faithful-hound",
-            "name": "Mordenkainen's Faithful Hound",
+            "name": "Верный пёс Морденкайнена (Mordenkainen's Faithful Hound)",
             "system": {
               "level": 4,
               "school": ""
@@ -446,9 +446,9 @@
             }
           },
           {
-            "_id": "4c5bcc068d446104",
+            "_id": "fb5ae02b6bf17216",
             "identifier": "mordenkainen-s-private-sanctum",
-            "name": "Mordenkainen's Private Sanctum",
+            "name": "Уединённое убежище Морденкайнена (Mordenkainen's Private Sanctum)",
             "system": {
               "level": 4,
               "school": ""
@@ -461,9 +461,9 @@
             }
           },
           {
-            "_id": "cba58f9aff5e4adf",
+            "_id": "62782436f4d49bbe",
             "identifier": "otiluke-s-resilient-sphere",
-            "name": "Otiluke's Resilient Sphere",
+            "name": "Упругая сфера Отилюка (Otiluke's Resilient Sphere)",
             "system": {
               "level": 4,
               "school": ""
@@ -476,9 +476,9 @@
             }
           },
           {
-            "_id": "22b56f7257c946d2",
+            "_id": "c8fb82f22398cab9",
             "identifier": "summon-construct",
-            "name": "Summon Construct",
+            "name": "Призыв конструкта (Summon Construct)",
             "system": {
               "level": 4,
               "school": ""
@@ -491,9 +491,9 @@
             }
           },
           {
-            "_id": "0f6f78e1f7305caa",
+            "_id": "4eef32ab84f5440a",
             "identifier": "bigby-s-hand",
-            "name": "Bigby's Hand",
+            "name": "Рука Бигби (Bigby's Hand)",
             "system": {
               "level": 5,
               "school": ""
@@ -506,9 +506,9 @@
             }
           },
           {
-            "_id": "a1eaec5ba2a5f078",
+            "_id": "546734f549c1b8f6",
             "identifier": "skill-empowerment",
-            "name": "Skill Empowerment",
+            "name": "Усиление навыка (Skill Empowerment)",
             "system": {
               "level": 5,
               "school": ""
@@ -521,9 +521,9 @@
             }
           },
           {
-            "_id": "0c60532b3e176f58",
+            "_id": "45187b5791d9cd53",
             "identifier": "transmute-rock",
-            "name": "Transmute Rock",
+            "name": "Превращение камня (Transmute Rock)",
             "system": {
               "level": 5,
               "school": ""
