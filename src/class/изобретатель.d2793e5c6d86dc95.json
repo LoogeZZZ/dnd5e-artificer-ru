@@ -35,8 +35,8 @@
       }
     },
     "wealth": "5d4 * 10",
-    "advancement": [
-      {
+    "advancement": {
+      "bb18ec437145bc79": {
         "_id": "bb18ec437145bc79",
         "type": "HitPoints",
         "configuration": {},
@@ -45,7 +45,7 @@
         "icon": "",
         "classRestriction": ""
       },
-      {
+      "5975180d18920961": {
         "_id": "5975180d18920961",
         "type": "Trait",
         "configuration": {
@@ -63,7 +63,7 @@
         "title": "Спасброски",
         "icon": ""
       },
-      {
+      "19f076031dbe7cc9": {
         "_id": "19f076031dbe7cc9",
         "type": "Trait",
         "configuration": {
@@ -85,7 +85,7 @@
         "title": "Доспехи, оружие и инструменты",
         "icon": ""
       },
-      {
+      "eb4dadfbe7843cb1": {
         "_id": "eb4dadfbe7843cb1",
         "type": "Trait",
         "configuration": {
@@ -113,7 +113,7 @@
         "title": "Навыки",
         "icon": ""
       },
-      {
+      "d0b26525cfbee4d4": {
         "_id": "d0b26525cfbee4d4",
         "type": "ScaleValue",
         "configuration": {
@@ -144,7 +144,7 @@
         "title": "Известные инфузии",
         "icon": ""
       },
-      {
+      "737a57853802220e": {
         "_id": "737a57853802220e",
         "type": "ScaleValue",
         "configuration": {
@@ -175,7 +175,7 @@
         "title": "Влитые предметы",
         "icon": ""
       },
-      {
+      "ea0e878a7ba6ec65": {
         "_id": "ea0e878a7ba6ec65",
         "type": "ItemChoice",
         "configuration": {
@@ -262,7 +262,7 @@
         "title": "Известные инфузии",
         "icon": ""
       },
-      {
+      "487fb5602aaf1dcf": {
         "_id": "487fb5602aaf1dcf",
         "type": "Subclass",
         "configuration": {},
@@ -271,7 +271,7 @@
         "title": "Специальность изобретателя",
         "icon": ""
       },
-      {
+      "4d4e94ce85bc7402": {
         "_id": "4d4e94ce85bc7402",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -284,7 +284,7 @@
         "title": "Увеличение характеристик",
         "icon": ""
       },
-      {
+      "2a3e8be35581b3d9": {
         "_id": "2a3e8be35581b3d9",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -297,7 +297,7 @@
         "title": "Увеличение характеристик",
         "icon": ""
       },
-      {
+      "e5f2212a8a8e7d90": {
         "_id": "e5f2212a8a8e7d90",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -310,7 +310,7 @@
         "title": "Увеличение характеристик",
         "icon": ""
       },
-      {
+      "bef727fa38dec4ec": {
         "_id": "bef727fa38dec4ec",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -323,7 +323,7 @@
         "title": "Увеличение характеристик",
         "icon": ""
       },
-      {
+      "7ed8708805050071": {
         "_id": "7ed8708805050071",
         "type": "AbilityScoreImprovement",
         "configuration": {
@@ -336,7 +336,7 @@
         "title": "Увеличение характеристик",
         "icon": ""
       },
-      {
+      "a4af77f48d946827": {
         "_id": "a4af77f48d946827",
         "type": "ItemGrant",
         "configuration": {
@@ -356,7 +356,7 @@
         "title": "Умения 1-го уровня",
         "icon": ""
       },
-      {
+      "43ca653aaff5afc5": {
         "_id": "43ca653aaff5afc5",
         "type": "ItemGrant",
         "configuration": {
@@ -373,7 +373,7 @@
         "title": "Инфузирование предмета",
         "icon": ""
       },
-      {
+      "96006aad3817f1f6": {
         "_id": "96006aad3817f1f6",
         "type": "ItemGrant",
         "configuration": {
@@ -390,7 +390,7 @@
         "title": "Подходящий инструмент",
         "icon": ""
       },
-      {
+      "ca879435ac6cc58c": {
         "_id": "ca879435ac6cc58c",
         "type": "ItemGrant",
         "configuration": {
@@ -407,7 +407,7 @@
         "title": "Компетентность во владении инструментами",
         "icon": ""
       },
-      {
+      "6b9ce959e48400b6": {
         "_id": "6b9ce959e48400b6",
         "type": "ItemGrant",
         "configuration": {
@@ -424,7 +424,7 @@
         "title": "Проблеск гениальности",
         "icon": ""
       },
-      {
+      "cc8e4b05ad96fcad": {
         "_id": "cc8e4b05ad96fcad",
         "type": "ItemGrant",
         "configuration": {
@@ -441,7 +441,7 @@
         "title": "Эксперт в обращении с магическими предметами",
         "icon": ""
       },
-      {
+      "33c454eb3617e4b4": {
         "_id": "33c454eb3617e4b4",
         "type": "ItemGrant",
         "configuration": {
@@ -458,7 +458,7 @@
         "title": "Хранящий заклинания предмет",
         "icon": ""
       },
-      {
+      "80aa41dbab6c8106": {
         "_id": "80aa41dbab6c8106",
         "type": "ItemGrant",
         "configuration": {
@@ -475,7 +475,7 @@
         "title": "Учёный по магическим предметам",
         "icon": ""
       },
-      {
+      "06a3084eed238aaf": {
         "_id": "06a3084eed238aaf",
         "type": "ItemGrant",
         "configuration": {
@@ -492,7 +492,7 @@
         "title": "Мастер в обращении с магическими предметами",
         "icon": ""
       },
-      {
+      "2182c364f6d1b77a": {
         "_id": "2182c364f6d1b77a",
         "type": "ItemGrant",
         "configuration": {
@@ -509,7 +509,7 @@
         "title": "Душа изобретения",
         "icon": ""
       }
-    ],
+    },
     "startingEquipment": []
   },
   "effects": [],

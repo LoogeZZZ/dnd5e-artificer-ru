@@ -11,7 +11,7 @@ try {
   let refs = 0, missing = 0;
   for await (const [k, v] of db.iterator()) {
     if (!k.startsWith("!items!")) continue;
-    for (const a of (v.system?.advancement || [])) {
+    for (const a of Object.values(v.system?.advancement || {})) {
       const pool = [...(a.configuration?.items || []), ...(a.configuration?.pool || [])];
       for (const it of pool) {
         refs++;

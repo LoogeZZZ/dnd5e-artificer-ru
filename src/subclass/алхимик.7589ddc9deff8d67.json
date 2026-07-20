@@ -15,8 +15,8 @@
       "custom": "Tasha's Cauldron of Everything",
       "book": "TCoE"
     },
-    "advancement": [
-      {
+    "advancement": {
+      "d60a6fe9d99df0c5": {
         "_id": "d60a6fe9d99df0c5",
         "type": "ItemGrant",
         "configuration": {
@@ -39,7 +39,7 @@
         "title": "Умения 3-го уровня",
         "icon": ""
       },
-      {
+      "12c7bfdf72b7adaa": {
         "_id": "12c7bfdf72b7adaa",
         "type": "ItemGrant",
         "configuration": {
@@ -56,7 +56,7 @@
         "title": "Умения 5-го уровня",
         "icon": ""
       },
-      {
+      "03e5e66ea813fa00": {
         "_id": "03e5e66ea813fa00",
         "type": "ItemGrant",
         "configuration": {
@@ -73,7 +73,7 @@
         "title": "Умения 9-го уровня",
         "icon": ""
       },
-      {
+      "a5ea9ec27ccf4922": {
         "_id": "a5ea9ec27ccf4922",
         "type": "ItemGrant",
         "configuration": {
@@ -90,7 +90,7 @@
         "title": "Умения 15-го уровня",
         "icon": ""
       }
-    ],
+    },
     "spellcasting": {
       "progression": "none",
       "ability": ""

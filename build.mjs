@@ -94,6 +94,10 @@ function infusionDoc(inf) {
 }
 
 // ---------- Advancement-конструкторы ----------
+// dnd5e 5.x хранит system.advancement как объект, ключ = _id (в 4.x был массив).
+// Пишем нативный формат 5.x, чтобы не полагаться на авто-миграцию пака.
+const advObject = (list) => Object.fromEntries(list.map((a) => [a._id, a]));
+
 const advHitPoints = () => ({
   _id: id("ADV:hp"),
   type: "HitPoints",
@@ -196,7 +200,7 @@ function classDoc() {
     20: [["feat-soul-of-artifice"], "Душа изобретения"]
   };
 
-  const advancement = [
+  const advancement = advObject([
     advHitPoints(),
     advTrait("saves", 1, "Спасброски", { grants: ["saves:con", "saves:int"] }),
     advTrait("armor", 1, "Доспехи, оружие и инструменты", { grants: ["armor:lgt", "armor:med", "armor:shield", "weapon:sim", "tool:thief", "tool:tinker"] }),
@@ -210,7 +214,7 @@ function classDoc() {
     ...[4, 8, 12, 16, 19].map(advASI),
     ...Object.entries(grantsByLevel).map(([lvl, [keys, title]]) =>
       advItemGrant(`L${lvl}`, Number(lvl), keys.map(featUuid), title))
-  ];
+  ]);
 
   return {
     _id,
@@ -265,12 +269,12 @@ function subclassDoc(sub) {
   const _id = id(`SUBCLASS:${sub.key}`);
   const byLevel = {};
   for (const f of sub.features) (byLevel[f.level] ??= []).push(f);
-  const advancement = [
-    ...Object.entries(byLevel).map(([lvl, feats]) =>
+  const advancement = advObject(
+    Object.entries(byLevel).map(([lvl, feats]) =>
       advItemGrant(`SUB:${sub.key}:L${lvl}`, Number(lvl),
         feats.map((f) => uuid(id(`FEAT:${f.key}`))),
         `Умения ${lvl}-го уровня`))
-  ];
+  );
   return {
     _id,
     _key: `!items!${_id}`,
